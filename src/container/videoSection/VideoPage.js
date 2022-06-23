@@ -1,8 +1,8 @@
 import React, { Component } from "react";
-import { Container, Row, Col, Button } from "react-bootstrap";
+import { Container, Row, Col } from "react-bootstrap";
 import bookvideo from "../../videos/Book.mp4";
 import "./video.css";
-import CountUp from "react-countup";
+// import CountUp from "react-countup";
 
 export class VideoPage extends Component {
         render() {

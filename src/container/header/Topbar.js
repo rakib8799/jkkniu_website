@@ -2,10 +2,7 @@ import React, { Component } from "react";
 import {
         Navbar,
         Nav,
-        NavDropdown,
-        Form,
-        FormControl,
-        Button,
+        NavDropdown
 } from "react-bootstrap";
 import logo from "../../images/logo.png";
 import "./header.css";

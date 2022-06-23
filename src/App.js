@@ -9,7 +9,7 @@ import FacultyPage from "./components/Faculty/FacultyPage";
 import Notify from "./components/Notification/Notify";
 import About from "./container/about/About";
 import AboutPage from "./container/about/AboutPage";
-import Count from "./container/count/Count";
+// import Count from "./container/count/Count";
 import Courses from "./container/courses/Courses";
 import Footer from "./container/footer/Footer";
 import FullGallery from "./container/gallery/FullGallery";
