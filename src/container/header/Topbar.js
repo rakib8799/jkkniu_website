@@ -69,14 +69,14 @@ const Topbar = (e) => {
                                                 // onMouseLeave={hideDropdown}
                                         >
                                                 <div className="text-center">
-                                                        <Link to="/faculty">
-                                                                <NavDropdown.Item href="/faculty">
+                                                        <Link to="/">
+                                                                <NavDropdown.Item href="/">
                                                                         Academic
                                                                         Programs
                                                                 </NavDropdown.Item>
                                                         </Link>
-                                                        <Link to="/faculty">
-                                                                <NavDropdown.Item href="/faculty">
+                                                        <Link to="/">
+                                                                <NavDropdown.Item href="/">
                                                                         Academic
                                                                         Calendar
                                                                 </NavDropdown.Item>
@@ -86,13 +86,13 @@ const Topbar = (e) => {
                                                                         Faculties
                                                                 </NavDropdown.Item>
                                                         </Link>
-                                                        <Link to="/faculty">
-                                                                <NavDropdown.Item href="/faculty">
+                                                        <Link to="/departments">
+                                                                <NavDropdown.Item href="/departments">
                                                                         Departments
                                                                 </NavDropdown.Item>
                                                         </Link>
-                                                        <Link to="/events">
-                                                                <NavDropdown.Item href="/events">
+                                                        <Link to="/">
+                                                                <NavDropdown.Item href="/">
                                                                         INSTITUTE/CENTER/CELL
                                                                 </NavDropdown.Item>
                                                         </Link>
@@ -107,73 +107,73 @@ const Topbar = (e) => {
                                                 // onMouseLeave={hideDropdown}
                                         >
                                                 <div className="text-center">
-                                                        <Link to="/courses">
-                                                                <NavDropdown.Item href="/courses">
+                                                        <Link to="/">
+                                                                <NavDropdown.Item href="/">
                                                                         Vice
                                                                         Chancellor
                                                                         Office
                                                                 </NavDropdown.Item>
                                                         </Link>
-                                                        <Link to="/gallery">
-                                                                <NavDropdown.Item href="/gallery">
+                                                        <Link to="/">
+                                                                <NavDropdown.Item href="/">
                                                                         Registrar
                                                                         Office
                                                                 </NavDropdown.Item>
                                                         </Link>
-                                                        <Link to="/events">
-                                                                <NavDropdown.Item href="/events">
+                                                        <Link to="/">
+                                                                <NavDropdown.Item href="/">
                                                                         Treasurer
                                                                         office
                                                                 </NavDropdown.Item>
                                                         </Link>
-                                                        <Link to="/events">
-                                                                <NavDropdown.Item href="/events">
+                                                        <Link to="/">
+                                                                <NavDropdown.Item href="/">
                                                                         Public
                                                                         Relations
                                                                         Office
                                                                 </NavDropdown.Item>
                                                         </Link>
-                                                        <Link to="/events">
-                                                                <NavDropdown.Item href="/events">
+                                                        <Link to="/">
+                                                                <NavDropdown.Item href="/">
                                                                         Student
                                                                         Counseling
                                                                         and
                                                                         Guidance
                                                                 </NavDropdown.Item>
                                                         </Link>
-                                                        <Link to="/events">
-                                                                <NavDropdown.Item href="/events">
+                                                        <Link to="/">
+                                                                <NavDropdown.Item href="/">
                                                                         Proctor
                                                                         Office
                                                                 </NavDropdown.Item>
                                                         </Link>
-                                                        <Link to="/events">
-                                                                <NavDropdown.Item href="/events">
+                                                        <Link to="/">
+                                                                <NavDropdown.Item href="/">
                                                                         Controller
                                                                         of Exam
                                                                 </NavDropdown.Item>
                                                         </Link>
-                                                        <Link to="/events">
-                                                                <NavDropdown.Item href="/events">
+                                                        <Link to="/">
+                                                                <NavDropdown.Item href="/">
                                                                         Accounts
                                                                         and
                                                                         Finance
                                                                 </NavDropdown.Item>
                                                         </Link>
-                                                        <Link to="/events">
-                                                                <NavDropdown.Item href="/events">
+                                                        <Link to="/">
+                                                                <NavDropdown.Item href="/">
                                                                         Engineering
                                                                         Section
                                                                 </NavDropdown.Item>
                                                         </Link>
-                                                        <Link to="/events">
-                                                                <NavDropdown.Item href="/events">
+                                                        <Link to="/">
+                                                                <NavDropdown.Item href="/">
                                                                         Transportation
                                                                         Pool
                                                                 </NavDropdown.Item>
                                                         </Link>
-                                                        <Link to="/events">
-                                                                <NavDropdown.Item href="/events">
+                                                        <Link to="/">
+                                                                <NavDropdown.Item href="/">
                                                                         Planning
                                                                         and
                                                                         Development
@@ -187,31 +187,31 @@ const Topbar = (e) => {
                                                 id="facilities-dropdown"
                                         >
                                                 <div className="text-center">
-                                                        <Link to="/courses">
-                                                                <NavDropdown.Item href="/courses">
+                                                        <Link to="/">
+                                                                <NavDropdown.Item href="/">
                                                                         Central
                                                                         Library
                                                                 </NavDropdown.Item>
                                                         </Link>
-                                                        <Link to="/gallery">
-                                                                <NavDropdown.Item href="/gallery">
+                                                        <Link to="/">
+                                                                <NavDropdown.Item href="/">
                                                                         Medical
                                                                         Center
                                                                 </NavDropdown.Item>
                                                         </Link>
-                                                        <Link to="/events">
-                                                                <NavDropdown.Item href="/events">
+                                                        <Link to="/">
+                                                                <NavDropdown.Item href="/">
                                                                         Physical
                                                                         Education
                                                                 </NavDropdown.Item>
                                                         </Link>
-                                                        <Link to="/events">
-                                                                <NavDropdown.Item href="/events">
+                                                        <Link to="/">
+                                                                <NavDropdown.Item href="/">
                                                                         ICT Cell
                                                                 </NavDropdown.Item>
                                                         </Link>
-                                                        <Link to="/events">
-                                                                <NavDropdown.Item href="/events">
+                                                        <Link to="/">
+                                                                <NavDropdown.Item href="/">
                                                                         RESIDENTIAL
                                                                         HALLS
                                                                 </NavDropdown.Item>
@@ -224,13 +224,13 @@ const Topbar = (e) => {
                                                 id="publications-dropdown"
                                         >
                                                 <div className="text-center">
-                                                        <Link to="/courses">
-                                                                <NavDropdown.Item href="/courses">
+                                                        <Link to="/">
+                                                                <NavDropdown.Item href="/">
                                                                         Journals
                                                                 </NavDropdown.Item>
                                                         </Link>
-                                                        <Link to="/gallery">
-                                                                <NavDropdown.Item href="/gallery">
+                                                        <Link to="/">
+                                                                <NavDropdown.Item href="/">
                                                                         Annual
                                                                         Report
                                                                 </NavDropdown.Item>
@@ -242,14 +242,14 @@ const Topbar = (e) => {
                                                 id="admission-dropdown"
                                         >
                                                 <div className="text-center">
-                                                        <Link to="/courses">
-                                                                <NavDropdown.Item href="/courses">
+                                                        <Link to="/">
+                                                                <NavDropdown.Item href="/">
                                                                         Undergraduate
                                                                         Programs
                                                                 </NavDropdown.Item>
                                                         </Link>
-                                                        <Link to="/gallery">
-                                                                <NavDropdown.Item href="/gallery">
+                                                        <Link to="/">
+                                                                <NavDropdown.Item href="/">
                                                                         Graduate
                                                                         Programs
                                                                 </NavDropdown.Item>
@@ -262,26 +262,26 @@ const Topbar = (e) => {
                                                 id="links-dropdown"
                                         >
                                                 <div className="text-center">
-                                                        <Link to="/courses">
-                                                                <NavDropdown.Item href="/courses">
+                                                        <Link to="/">
+                                                                <NavDropdown.Item href="/">
                                                                         JKKNIU
                                                                         Login
                                                                 </NavDropdown.Item>
                                                         </Link>
-                                                        <Link to="/courses">
-                                                                <NavDropdown.Item href="/courses">
+                                                        <Link to="/">
+                                                                <NavDropdown.Item href="/">
                                                                         Student
                                                                         Login
                                                                 </NavDropdown.Item>
                                                         </Link>
-                                                        <Link to="/courses">
-                                                                <NavDropdown.Item href="/courses">
+                                                        <Link to="/">
+                                                                <NavDropdown.Item href="/">
                                                                         JKKNIU
                                                                         Forms
                                                                 </NavDropdown.Item>
                                                         </Link>
-                                                        <Link to="/courses">
-                                                                <NavDropdown.Item href="/courses">
+                                                        <Link to="/">
+                                                                <NavDropdown.Item href="/">
                                                                         Notice
                                                                         Board
                                                                 </NavDropdown.Item>
@@ -297,8 +297,8 @@ const Topbar = (e) => {
                                                                         Events
                                                                 </NavDropdown.Item>
                                                         </Link>
-                                                        <Link to="/events">
-                                                                <NavDropdown.Item href="/events">
+                                                        <Link to="/">
+                                                                <NavDropdown.Item href="/">
                                                                         Career
                                                                 </NavDropdown.Item>
                                                         </Link>

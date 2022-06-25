@@ -1,86 +1,100 @@
 import React from "react";
-import { Container, Row, Col, Card, Button } from "react-bootstrap";
-import course01 from "../../images/course01.jpeg";
+import { Container, Row, Col, Button } from "react-bootstrap";
+// import course01 from "../../images/course01.jpeg";
 import "../../container/courses/courses.css";
 import "../../container/about/about.css";
-import { Link } from "react-router-dom";
+import { useParams } from "react-router-dom";
+import DataDept from "./DataDept";
 
 function Department() {
         // render() {
-        // const params = useParams();
+        const params = useParams();
 
         const displayDepartment = [
                 {
-                        departments: "Bangla Language and Literature",
-                        shortForm: "Bangla",
-                        image: course01,
+                        faculty: "FACARTS",
+                        departments: [
+                                "Bangla Language and Literature",
+                                "English Language and Literature",
+                                "Music",
+                                "Theatre and Performance Studies",
+                                "Film and Media",
+                                "Philosophy",
+                        ],
+                        shortForm: [
+                                "Bangla",
+                                "English",
+                                "Music",
+                                "Theatre",
+                                "Film",
+                                "Philosophy",
+                        ],
+                        // image: course01,
                 },
                 {
-                        departments: "English Language and Literature",
-                        shortForm: "English",
-                        image: course01,
+                        faculty: "FACFINEARTS",
+                        departments: ["Fine Arts"],
+                        shortForm: ["Fine_Arts"],
+                        // image: course01,
                 },
                 {
-                        departments: "Music",
-                        shortForm: "Music",
-                        image: course01,
+                        faculty: "FACSCI",
+                        departments: [
+                                "Computer Science and Engineering",
+                                "Electrical and Electronics Engineering",
+                                "Environmental Science and Engineering ",
+                                "Statistics",
+                        ],
+                        shortForm: ["CSE", "EEE", "ESE", "STAT"],
+                        // image: course01,
                 },
                 {
-                        departments: "Theatre and Performance Studies",
-                        shortForm: "Theatre",
-                        image: course01,
+                        faculty: "FACSOCIALSCI",
+                        departments: [
+                                "Economics",
+                                "Public Administration and Governance Studies",
+                                "Folklore",
+                                "Anthropology",
+                                "Population Science",
+                                "Local Government and Urban Development",
+                                "Sociology",
+                        ],
+                        shortForm: [
+                                "Economics",
+                                "PAGS",
+                                "Folklore",
+                                "Anthropology",
+                                "Population_Science",
+                                "LGUD",
+                                "Sociology",
+                        ],
+                        // image: course01,
                 },
                 {
-                        departments: "Film and Media",
-                        shortForm: "Film",
-                        image: course01,
+                        faculty: "FACLAW",
+                        departments: ["Law and Justice"],
+                        shortForm: ["Law"],
+                        // image: course01,
                 },
                 {
-                        departments: "Philosophy",
-                        shortForm: "Philosophy",
-                        image: course01,
+                        faculty: "FACBUSINESS",
+                        departments: [
+                                "Accounting and Information Systems",
+                                "Finance and Banking",
+                                "Human Resource Management",
+                                "Management",
+                        ],
+                        shortForm: ["AIS", "Finance", "HRM", "Management"],
+                        // image: course01,
                 },
-        ].map((department, index) => (
-                <Col
-                        xs={10}
-                        sm={6}
-                        lg={4}
-                        className="course-item mx-auto my-3"
-                        key={department + index}
-                        data-aos="fade-up"
-                >
-                        <Card className="course-card">
-                                <div className="img-container">
-                                        <Card.Img
-                                                variant="top"
-                                                src={course01}
-                                                className="course-img"
-                                        />
-                                        <span className="course-item-icon">
-                                                <i className="fas fa-star"></i>
-                                        </span>
-                                </div>
-                                <Card.Body>
-                                        <Card.Title>
-                                                {department.departments}
-                                        </Card.Title>
-                                        <Card.Text>
-                                                Some quick example text to build
-                                                on the card title and make up
-                                                the bulk of the card's content.
-                                        </Card.Text>
-                                        <div className="text-center">
-                                                <Link
-                                                        to={`/department/${department.shortForm}`}
-                                                        className="btn btn-optional text-center"
-                                                >
-                                                        See Details
-                                                </Link>
-                                        </div>
-                                </Card.Body>
-                        </Card>
-                </Col>
-        ));
+        ];
+
+        const data = displayDepartment.find(
+                (data) => data.faculty === params.faculty
+        );
+        // console.log(data.departments);
+        const mapData = data.departments;
+        // const mapShort = data.shortForm;
 
         return (
                 <section id="courses" className="courses">
@@ -145,7 +159,22 @@ function Department() {
                                                 </p>
                                         </Col>
                                 </Row>
-                                <Row>{displayDepartment}</Row>
+                                <Row>
+                                        {mapData.map((dept, index) => (
+                                                <DataDept
+                                                        key={dept + index}
+                                                        dept={dept}
+                                                        // data={data}
+                                                        // mapShort={mapShort}
+                                                />
+                                        ))}
+                                        {/* {mapShort.map((short, index) => (
+                                                <DataDept
+                                                        key={short + index}
+                                                        short={short}
+                                                />
+                                        ))} */}
+                                </Row>
                                 <Row>
                                         <Col
                                                 className="mx-auto my-3"

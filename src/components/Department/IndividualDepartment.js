@@ -1,5 +1,5 @@
 import React from "react";
-import { Container, Row, Col, Card, Button } from "react-bootstrap";
+import { Container, Row, Col, Card } from "react-bootstrap";
 import course01 from "../../images/course01.jpeg";
 import "../../container/courses/courses.css";
 import { Link, useParams } from "react-router-dom";
@@ -61,8 +61,8 @@ function IndividualDepartment() {
 
         return (
                 <section id="courses" className="courses py-5">
-                        <div>Department: {params.department}</div>
-                        <Container>
+                        {/* <div>Department: {params.department}</div> */}
+                        <Container fluid>
                                 <Row>
                                         <Col
                                                 xs={10}
@@ -76,8 +76,9 @@ function IndividualDepartment() {
                                                                         color: "brown",
                                                                 }}
                                                         >
-                                                                Bangla Language
-                                                                And Literature
+                                                                {
+                                                                        params.department
+                                                                }
                                                         </strong>
                                                 </h1>
                                                 <p
@@ -97,7 +98,7 @@ function IndividualDepartment() {
                                         </Col>
                                 </Row>
                                 <Row>{displayCourses}</Row>
-                                <Row>
+                                {/* <Row>
                                         <Col
                                                 className="mx-auto my-3"
                                                 data-aos="zoom-in"
@@ -108,7 +109,7 @@ function IndividualDepartment() {
                                                         </Button>
                                                 </div>
                                         </Col>
-                                </Row>
+                                </Row> */}
                                 <Row>
                                         <Col>
                                                 <ControlledTab />
