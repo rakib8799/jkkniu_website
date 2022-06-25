@@ -1,9 +1,10 @@
 /* eslint-disable jsx-a11y/no-distracting-elements */
 import React, { Component } from "react";
-import { Button, Card, Col, Container, Image, Row } from "react-bootstrap";
-import course from "../../images/course01.jpeg";
+import { Button, Card, Col, Container, Row } from "react-bootstrap";
+import course01 from "../../images/course01.jpeg";
 import LatestEvents from "./LatestEvents";
 import "./message.css";
+// import "../courses/courses.css";
 
 class Message extends Component {
         constructor(props) {
@@ -18,50 +19,43 @@ class Message extends Component {
                         "card04",
                         "card05",
                         "card06",
-                ].map((cards, index) => (
+                ].map((course, index) => (
                         <Col
-                                className="mx-auto my-3"
-                                lg={4}
+                                xs={10}
                                 sm={6}
-                                data-aos="zoom-in-up"
+                                lg={4}
+                                className="course-item mx-auto my-3"
+                                key={course + index}
+                                data-aos="fade-up"
                         >
-                                <Card className="message-card border-radius">
-                                        <Row className="no-gutters">
-                                                <Col className="col-sm-6">
-                                                        <Image
-                                                                src={course}
-                                                                fluid
-                                                                style={{
-                                                                        width: "100%",
-                                                                        height: "100%",
-                                                                }}
-                                                        />
-                                                </Col>
-                                                <Col className="col-sm-6">
-                                                        <Card.Body>
-                                                                <Card.Title>
-                                                                        Learn Js
-                                                                        in ease
-                                                                </Card.Title>
-                                                                <Card.Text>
-                                                                        Lorem
-                                                                        ipsum
-                                                                        dolet
-                                                                        lorem
-                                                                        ipsum
-                                                                        dolet
-                                                                        lorem
-                                                                </Card.Text>
-                                                                <a
-                                                                        href="/notification"
-                                                                        className="btn btn-optional text-white"
-                                                                >
-                                                                        Learn
-                                                                        More
-                                                                </a>
-                                                        </Card.Body>
-                                                </Col>
-                                        </Row>
+                                <Card className="course-card">
+                                        <div className="img-container">
+                                                <Card.Img
+                                                        variant="top"
+                                                        src={course01}
+                                                        className="course-img"
+                                                />
+                                                <span className="course-item-icon">
+                                                        <i className="fas fa-star"></i>
+                                                </span>
+                                        </div>
+                                        <Card.Body>
+                                                <Card.Title>
+                                                        Card Title
+                                                </Card.Title>
+                                                <Card.Text>
+                                                        Some quick example text
+                                                        to build on the card
+                                                        title and make up the
+                                                        bulk of the card's
+                                                        content.
+                                                </Card.Text>
+                                                <div className="text-center">
+                                                        <Button className="btn btn-optional text-center">
+                                                                Register
+                                                        </Button>
+                                                </div>
+                                        </Card.Body>
                                 </Card>
                         </Col>
                 ));

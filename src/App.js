@@ -4,6 +4,8 @@ import React from "react";
 import { HashRouter as Router, Route, Switch } from "react-router-dom";
 import "./App.css";
 import Contact from "./components/contact/Contact";
+import Department from "./components/Department/Department";
+import IndividualDepartment from "./components/Department/IndividualDepartment";
 import Event from "./components/Events/Event";
 import FacultyPage from "./components/Faculty/FacultyPage";
 import Notify from "./components/Notification/Notify";
@@ -66,6 +68,21 @@ class App extends React.Component {
                                                 <Route exact path="/faculty">
                                                         <FacultyPage />
                                                 </Route>
+                                                <Route
+                                                        exact
+                                                        path="/faculty/:faculty"
+                                                >
+                                                        <Department />
+                                                </Route>
+                                                <Route
+                                                        exact
+                                                        path="/department/:department"
+                                                >
+                                                        <IndividualDepartment />
+                                                </Route>
+                                                {/* <Route exact path="">
+                                                        <Courses />
+                                                </Route> */}
                                                 <Route exact path="/contact">
                                                         <Contact />
                                                 </Route>
