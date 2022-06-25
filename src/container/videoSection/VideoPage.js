@@ -1,14 +1,28 @@
 import React, { Component } from "react";
 import { Container, Row, Col } from "react-bootstrap";
-import bookvideo from "../../videos/Book.mp4";
+import jkkniu from "../../videos/JKKNIU.mp4";
 import "./video.css";
 // import CountUp from "react-countup";
 
 export class VideoPage extends Component {
         render() {
                 return (
-                        <section style={{ backgroundColor: "#0d2d62" }}>
+                        <section style={{ background: "#fff" }}>
                                 <Container fluid className="video-container">
+                                        <Row>
+                                                <Col className="mx-auto my-3 text-center text-capitalize">
+                                                        <h1>
+                                                                Our{" "}
+                                                                <strong
+                                                                        style={{
+                                                                                color: "brown",
+                                                                        }}
+                                                                >
+                                                                        Campus
+                                                                </strong>
+                                                        </h1>
+                                                </Col>
+                                        </Row>
                                         <Row className="video-row">
                                                 <Col
                                                         xs={10}
@@ -18,21 +32,21 @@ export class VideoPage extends Component {
                                                                 autoPlay
                                                                 loop
                                                                 muted
+                                                                // controls
                                                         >
                                                                 <source
                                                                         src={
-                                                                                bookvideo
+                                                                                jkkniu
                                                                         }
                                                                         type="video/mp4"
                                                                 ></source>
                                                         </video>
-                                                        <div className="video-text">
+                                                        {/* <div className="video-text">
                                                                 <p>
                                                                         OUR
                                                                         CAMPUS
                                                                 </p>
-                                                                {/* <Button variant="danger">Register</Button> */}
-                                                        </div>
+                                                        </div> */}
                                                 </Col>
                                         </Row>
                                 </Container>

@@ -2,11 +2,12 @@ import React from "react";
 import { Container, Row, Col, Card, Button } from "react-bootstrap";
 import course01 from "../../images/course01.jpeg";
 import "../../container/courses/courses.css";
-import { Link, useParams } from "react-router-dom";
+import "../../container/about/about.css";
+import { Link } from "react-router-dom";
 
 function Department() {
         // render() {
-        const params = useParams();
+        // const params = useParams();
 
         const displayDepartment = [
                 {
@@ -82,14 +83,38 @@ function Department() {
         ));
 
         return (
-                <section id="courses" className="courses py-5">
-                        <div>Faculty: {params.faculty}</div>
+                <section id="courses" className="courses">
+                        {/* <div>Faculty: {params.faculty}</div> */}
+                        <Container
+                                style={{
+                                        backgroundColor: "brown",
+                                        color: "#fff",
+                                }}
+                                className="text-center py-5 aboutpage"
+                                fluid
+                        >
+                                <Row>
+                                        <Col>
+                                                <h1>Department</h1>
+                                                <p>
+                                                        Academics / Faculty /{" "}
+                                                        <span
+                                                                style={{
+                                                                        color: "brown",
+                                                                }}
+                                                        >
+                                                                Department
+                                                        </span>
+                                                </p>
+                                        </Col>
+                                </Row>
+                        </Container>
                         <Container>
                                 <Row>
                                         <Col
                                                 xs={10}
                                                 sm={6}
-                                                className="mx-auto text-center course-title"
+                                                className="mt-5 mx-auto text-center course-title"
                                         >
                                                 <h1 className="text-capitalize text-dark">
                                                         Our Featured{" "}
@@ -98,7 +123,7 @@ function Department() {
                                                                         color: "brown",
                                                                 }}
                                                         >
-                                                                Courses
+                                                                Departments
                                                         </strong>
                                                 </h1>
                                                 <p

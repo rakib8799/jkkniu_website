@@ -20,6 +20,7 @@ import Slider from "./container/header/Slider";
 import Topbar from "./container/header/Topbar";
 import Info from "./container/info/Info";
 import Message from "./container/Messages/Message";
+import Notice from "./container/Messages/Notice";
 import VideoPage from "./container/videoSection/VideoPage";
 
 class App extends React.Component {
@@ -44,7 +45,8 @@ class App extends React.Component {
                                                         <Message />
                                                         <VideoPage />
                                                         {/* <Count /> */}
-                                                        <Courses />
+                                                        <Notice />
+                                                        {/* <Courses /> */}
                                                         <PhotoGallary />
                                                 </Route>
                                                 <Route exact path="/about">

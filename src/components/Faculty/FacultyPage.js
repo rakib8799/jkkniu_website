@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import { Container, Row, Col, Card, Button } from "react-bootstrap";
 import course01 from "../../images/course01.jpeg";
 import "../../container/courses/courses.css";
+import "../../container/about/about.css";
 import { Link } from "react-router-dom";
 
 class FacultyPage extends Component {
@@ -82,13 +83,37 @@ class FacultyPage extends Component {
                 ));
 
                 return (
-                        <section id="courses" className="courses py-5">
+                        <section id="courses" className="courses">
+                                <Container
+                                        style={{
+                                                backgroundColor: "brown",
+                                                color: "#fff",
+                                        }}
+                                        className="text-center py-5 aboutpage"
+                                        fluid
+                                >
+                                        <Row>
+                                                <Col>
+                                                        <h1>Faculty</h1>
+                                                        <p>
+                                                                Academics /{" "}
+                                                                <span
+                                                                        style={{
+                                                                                color: "brown",
+                                                                        }}
+                                                                >
+                                                                        Faculty
+                                                                </span>
+                                                        </p>
+                                                </Col>
+                                        </Row>
+                                </Container>
                                 <Container>
                                         <Row>
                                                 <Col
                                                         xs={10}
                                                         sm={6}
-                                                        className="mx-auto text-center course-title"
+                                                        className="mt-5 mx-auto text-center course-title"
                                                 >
                                                         <h1 className="text-capitalize text-dark">
                                                                 Our Featured{" "}
@@ -97,7 +122,7 @@ class FacultyPage extends Component {
                                                                                 color: "brown",
                                                                         }}
                                                                 >
-                                                                        Courses
+                                                                        Faculty
                                                                 </strong>
                                                         </h1>
                                                         <p
