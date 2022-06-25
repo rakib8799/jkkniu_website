@@ -18,7 +18,9 @@ const Slider = () => {
                                                                 alt="First slide"
                                                                 fluid
                                                                 style={{
-                                                                        objectFit: "cover",
+                                                                        // objectFit: "cover",
+                                                                        maxWidth: "100%",
+                                                                        height: "auto",
                                                                 }}
                                                         />
                                                         {/* <Carousel.Caption
@@ -99,7 +101,9 @@ const Slider = () => {
                                                                 alt="Third slide"
                                                                 fluid
                                                                 style={{
-                                                                        objectFit: "cover",
+                                                                        // objectFit: "cover",
+                                                                        maxWidth: "100%",
+                                                                        height: "auto",
                                                                 }}
                                                         />
 
@@ -139,7 +143,9 @@ const Slider = () => {
                                                                 alt="Third slide"
                                                                 fluid
                                                                 style={{
-                                                                        objectFit: "cover",
+                                                                        // objectFit: "cover",
+                                                                        maxWidth: "100%",
+                                                                        height: "auto",
                                                                 }}
                                                         />
 
