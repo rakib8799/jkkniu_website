@@ -13,10 +13,10 @@ const Slider = () => {
                                         <Carousel>
                                                 <Carousel.Item>
                                                         <Image
-                                                                className="d-block w-100"
+                                                                // className="d-block w-100"
                                                                 src={slide01}
                                                                 alt="First slide"
-                                                                fluid
+                                                                // fluid
                                                                 style={{
                                                                         // objectFit: "cover",
                                                                         maxWidth: "100%",
@@ -96,10 +96,10 @@ const Slider = () => {
                                                 </Carousel.Item>
                                                 <Carousel.Item>
                                                         <Image
-                                                                className="d-block w-100"
+                                                                // className="d-block w-100"
                                                                 src={slide02}
                                                                 alt="Third slide"
-                                                                fluid
+                                                                // fluid
                                                                 style={{
                                                                         // objectFit: "cover",
                                                                         maxWidth: "100%",
@@ -138,10 +138,10 @@ const Slider = () => {
                                                 </Carousel.Item>
                                                 <Carousel.Item>
                                                         <Image
-                                                                className="d-block w-100"
+                                                                // className="d-block w-100"
                                                                 src={slide03}
                                                                 alt="Third slide"
-                                                                fluid
+                                                                // fluid
                                                                 style={{
                                                                         // objectFit: "cover",
                                                                         maxWidth: "100%",
