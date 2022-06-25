@@ -1,65 +1,76 @@
 import React from "react";
-import { Container, Row, Col, Card, Button } from "react-bootstrap";
-import course01 from "../../images/course01.jpeg";
-import "../../container/courses/courses.css";
+import { Container, Row, Col, Button, Image } from "react-bootstrap";
+// import course01 from "../../images/course01.jpeg";
+import "../Faculty/faculty.css";
 import { Link } from "react-router-dom";
 
 const OfficersWithStuffs = () => {
-        const displayCourses = [
+        const displayStuffs = [
                 {
-                        courses: "Staff 1",
+                        stuffs: "Staff 1",
                         shortForm: "Staff1",
-                        image: course01,
+                        image: "https://picsum.photos/130/130?image=1027",
                 },
                 {
-                        courses: "Staff 2",
+                        stuffs: "Staff 2",
                         shortForm: "Staff2",
-                        image: course01,
+                        image: "https://picsum.photos/130/130?image=1027",
                 },
                 {
-                        courses: "Staff 3",
+                        stuffs: "Staff 3",
                         shortForm: "Staff3",
-                        image: course01,
+                        image: "https://picsum.photos/130/130?image=1027",
                 },
-        ].map((course, index) => (
-                <Col
-                        xs={10}
-                        sm={6}
-                        lg={4}
-                        className="course-item mx-auto my-3"
-                        key={course + index}
-                        data-aos="fade-up"
-                >
-                        <Card className="course-card">
-                                <div className="img-container">
-                                        <Card.Img
-                                                variant="top"
-                                                src={course01}
-                                                className="course-img"
-                                        />
-                                        <span className="course-item-icon">
-                                                <i className="fas fa-star"></i>
-                                        </span>
+        ].map((stuffs, index) => (
+                <Col xs={12} sm={6} md={4} lg={4} key={index + stuffs}>
+                        <div className="our-team">
+                                <div className="picture">
+                                        <Image src={stuffs.image} fluid />
                                 </div>
-                                <Card.Body>
-                                        <Card.Title>
-                                                {course.courses}
-                                        </Card.Title>
-                                        <Card.Text>
-                                                Some quick example text to build
-                                                on the card title and make up
-                                                the bulk of the card's content.
-                                        </Card.Text>
-                                        <div className="text-center">
-                                                <Link
-                                                        to={`/course/${course.shortForm}`}
-                                                        className="btn btn-optional text-center"
+                                <div className="team-content">
+                                        <h3 className="name">
+                                                {stuffs.stuffs}
+                                        </h3>
+                                        <h4 className="title">Web Developer</h4>
+                                        <Link
+                                                to={`/stuffs/${stuffs.shortForm}`}
+                                                className="btn-primary"
+                                        >
+                                                See details
+                                        </Link>
+                                </div>
+                                <ul class="social">
+                                        <li>
+                                                <a class="facebook" href="#fb">
+                                                        <i class="fab fa-facebook-f"></i>
+                                                </a>
+                                        </li>
+                                        <li>
+                                                <a
+                                                        class="twitter"
+                                                        href="#twitter"
                                                 >
-                                                        See Details
-                                                </Link>
-                                        </div>
-                                </Card.Body>
-                        </Card>
+                                                        <i class="fab fa-twitter"></i>
+                                                </a>
+                                        </li>
+                                        <li>
+                                                <a
+                                                        class="dribbble"
+                                                        href="#dribble"
+                                                >
+                                                        <i class="fab fa-dribbble"></i>
+                                                </a>
+                                        </li>
+                                        <li>
+                                                <a
+                                                        class="linkedin"
+                                                        href="#linkedin"
+                                                >
+                                                        <i class="fab fa-linkedin-in"></i>
+                                                </a>
+                                        </li>
+                                </ul>
+                        </div>
                 </Col>
         ));
         return (
@@ -105,7 +116,7 @@ const OfficersWithStuffs = () => {
                                                         </p>
                                                 </Col>
                                         </Row> */}
-                                        <Row>{displayCourses}</Row>
+                                        <Row>{displayStuffs}</Row>
                                         <Row>
                                                 <Col
                                                         className="mx-auto my-3"

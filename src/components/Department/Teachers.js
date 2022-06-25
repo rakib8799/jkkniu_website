@@ -1,157 +1,114 @@
 import React from "react";
-import { Container, Row, Col, Card, Button } from "react-bootstrap";
-import course01 from "../../images/course01.jpeg";
-import "../../container/courses/courses.css";
+import { Container, Row, Col, Image } from "react-bootstrap";
+// import course01 from "../../images/course01.jpeg";
+import "../Faculty/faculty.css";
 import { Link } from "react-router-dom";
 
 const Teachers = () => {
-        const displayCourses = [
+        const displayTeachers = [
                 {
-                        courses: "Teacher 1",
+                        teacher: "Teacher 1",
                         shortForm: "Teacher1",
-                        image: course01,
+                        image: "https://picsum.photos/130/130?image=1027",
                 },
                 {
-                        courses: "Teacher 2",
+                        teacher: "Teacher 2",
                         shortForm: "Teacher2",
-                        image: course01,
+                        image: "https://picsum.photos/130/130?image=1027",
                 },
                 {
-                        courses: "Teacher 3",
+                        teacher: "Teacher 3",
                         shortForm: "Teacher3",
-                        image: course01,
+                        image: "https://picsum.photos/130/130?image=1027",
                 },
                 {
-                        courses: "Teacher 4",
+                        teacher: "Teacher 4",
                         shortForm: "Teacher4",
-                        image: course01,
+                        image: "https://picsum.photos/130/130?image=1027",
                 },
                 {
-                        courses: "Teacher 5",
+                        teacher: "Teacher 5",
                         shortForm: "Teacher5",
-                        image: course01,
+                        image: "https://picsum.photos/130/130?image=1027",
                 },
                 {
-                        courses: "Teacher 6",
+                        teacher: "Teacher 6",
                         shortForm: "Teacher6",
-                        image: course01,
+                        image: "https://picsum.photos/130/130?image=1027",
                 },
                 {
-                        courses: "Teacher 7",
+                        teacher: "Teacher 7",
                         shortForm: "Teacher7",
-                        image: course01,
+                        image: "https://picsum.photos/130/130?image=1027",
                 },
                 {
-                        courses: "Teacher 8",
+                        teacher: "Teacher 8",
                         shortForm: "Teacher8",
-                        image: course01,
+                        image: "https://picsum.photos/130/130?image=1027",
                 },
                 {
-                        courses: "Teacher 9",
+                        teacher: "Teacher 9",
                         shortForm: "Teacher9",
-                        image: course01,
+                        image: "https://picsum.photos/130/130?image=1027",
                 },
-        ].map((course, index) => (
-                <Col
-                        xs={10}
-                        sm={6}
-                        lg={4}
-                        className="course-item mx-auto my-3"
-                        key={course + index}
-                        data-aos="fade-up"
-                >
-                        <Card className="course-card">
-                                <div className="img-container">
-                                        <Card.Img
-                                                variant="top"
-                                                src={course01}
-                                                className="course-img"
-                                        />
-                                        <span className="course-item-icon">
-                                                <i className="fas fa-star"></i>
-                                        </span>
+        ].map((teacher, index) => (
+                <Col xs={12} sm={6} md={4} lg={4} key={index + teacher}>
+                        <div className="our-team">
+                                <div className="picture">
+                                        <Image src={teacher.image} fluid />
                                 </div>
-                                <Card.Body>
-                                        <Card.Title>
-                                                {course.courses}
-                                        </Card.Title>
-                                        <Card.Text>
-                                                Some quick example text to build
-                                                on the card title and make up
-                                                the bulk of the card's content.
-                                        </Card.Text>
-                                        <div className="text-center">
-                                                <Link
-                                                        to={`/course/${course.shortForm}`}
-                                                        className="btn btn-optional text-center"
+                                <div className="team-content">
+                                        <h3 className="name">
+                                                {teacher.teacher}
+                                        </h3>
+                                        <h4 className="title">Web Developer</h4>
+                                        <Link
+                                                to={`/teacher/${teacher.shortForm}`}
+                                                className="btn-primary"
+                                        >
+                                                See details
+                                        </Link>
+                                </div>
+                                <ul class="social">
+                                        <li>
+                                                <a class="facebook" href="#fb">
+                                                        <i class="fab fa-facebook-f"></i>
+                                                </a>
+                                        </li>
+                                        <li>
+                                                <a
+                                                        class="twitter"
+                                                        href="#twitter"
                                                 >
-                                                        See Details
-                                                </Link>
-                                        </div>
-                                </Card.Body>
-                        </Card>
+                                                        <i class="fab fa-twitter"></i>
+                                                </a>
+                                        </li>
+                                        <li>
+                                                <a
+                                                        class="dribbble"
+                                                        href="#dribble"
+                                                >
+                                                        <i class="fab fa-dribbble"></i>
+                                                </a>
+                                        </li>
+                                        <li>
+                                                <a
+                                                        class="linkedin"
+                                                        href="#linkedin"
+                                                >
+                                                        <i class="fab fa-linkedin-in"></i>
+                                                </a>
+                                        </li>
+                                </ul>
+                        </div>
                 </Col>
         ));
         return (
-                <>
-                        <section id="courses" className="courses py-5">
-                                {/* <div>Department: {params.department}</div> */}
-                                <Container>
-                                        {/* <Row>
-                                                <Col
-                                                        xs={10}
-                                                        sm={6}
-                                                        className="mx-auto text-center course-title"
-                                                >
-                                                        <h1 className="text-capitalize text-dark">
-                                                                Our Featured{" "}
-                                                                <strong
-                                                                        style={{
-                                                                                color: "brown",
-                                                                        }}
-                                                                >
-                                                                        Courses
-                                                                </strong>
-                                                        </h1>
-                                                        <p
-                                                                style={{
-                                                                        borderTop: "3px solid white",
-                                                                        width: 70,
-                                                                        marginTop: 20,
-                                                                }}
-                                                        ></p>
-                                                        <p
-                                                                className="text-muted"
-                                                                data-aos="fade-up"
-                                                        >
-                                                                Our Featured
-                                                                Courses are
-                                                                selected through
-                                                                a rigorous
-                                                                process and
-                                                                uniquely created
-                                                                for each
-                                                                semester.
-                                                        </p>
-                                                </Col>
-                                        </Row> */}
-                                        <Row>{displayCourses}</Row>
-                                        <Row>
-                                                <Col
-                                                        className="mx-auto my-3"
-                                                        data-aos="zoom-in"
-                                                >
-                                                        <div className="text-center">
-                                                                <Button className="btn btn-main">
-                                                                        View
-                                                                        More
-                                                                </Button>
-                                                        </div>
-                                                </Col>
-                                        </Row>
-                                </Container>
-                        </section>
-                </>
+                <section>
+                        <Container className="mt-5 mb-5">
+                                <Row>{displayTeachers}</Row>
+                        </Container>
+                </section>
         );
 };
 
