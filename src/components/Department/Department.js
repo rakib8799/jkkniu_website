@@ -6,7 +6,7 @@ import "../../container/about/about.css";
 import { useParams } from "react-router-dom";
 import DataDept from "./DataDept";
 
-function Department() {
+const Department = () => {
         // render() {
         const params = useParams();
 
@@ -190,7 +190,7 @@ function Department() {
                         </Container>
                 </section>
         );
-}
+};
 // }
 
 export default Department;

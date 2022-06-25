@@ -4,7 +4,7 @@ import logo from "../../images/logo.png";
 import "./header.css";
 import { Link } from "react-router-dom";
 
-const Topbar = (e) => {
+const Topbar = () => {
         // const [show, setShow] = useState({
         //         showAcademics: false,
         //         showAdministration: false,

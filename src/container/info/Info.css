@@ -36,4 +36,8 @@
 
 .btn-main {
         background: linear-gradient(to right, #9c3230, #ff706e);
+        transition: all 0.3s linear 0s;
+}
+.btn-main:hover {
+        background: linear-gradient(to left, #9c3230, #ff706e);
 }

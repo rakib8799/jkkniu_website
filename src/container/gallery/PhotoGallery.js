@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import Gallery from "react-grid-gallery";
 import { IMAGES } from "./Data";
 import { Container, Row, Col, Button } from "react-bootstrap";
-import { Link } from "react-router-dom";
+// import { Link } from "react-router-dom";
 
 class PhotoGallery extends Component {
         constructor(props) {
@@ -37,7 +37,7 @@ class PhotoGallery extends Component {
                                         <Gallery
                                                 images={this.state.imageData}
                                         />
-                                        <div className="text-center">
+                                        {/* <div className="text-center">
                                                 <Button
                                                         variant="danger"
                                                         data-aos="zoom-in"
@@ -51,7 +51,19 @@ class PhotoGallery extends Component {
                                                                 View More
                                                         </Link>
                                                 </Button>
-                                        </div>
+                                        </div> */}
+                                        <Row>
+                                                <Col className="mx-auto text-center my-3">
+                                                        <Button
+                                                                className="btn btn-main"
+                                                                style={{
+                                                                        margin: "20px 0",
+                                                                }}
+                                                        >
+                                                                View More
+                                                        </Button>
+                                                </Col>
+                                        </Row>
                                 </Container>
                         </section>
                 );

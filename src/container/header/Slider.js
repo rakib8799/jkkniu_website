@@ -1,36 +1,27 @@
-import React, { Component } from "react";
+import React from "react";
 import { Container, Row, Col, Carousel, Image } from "react-bootstrap";
 import slide01 from "../../images/slide-01.png";
 import slide02 from "../../images/slide-02.png";
 import slide03 from "../../images/slide-03.png";
 import "./header.css";
 
-class Slider extends Component {
-        render() {
-                return (
-                        <Container
-                                fluid
-                                style={{ height: "calc(100vh - 77px)" }}
-                        >
-                                <Row className="max-height">
-                                        <Col
-                                                xs={10}
-                                                className="mx-auto div-col"
-                                        >
-                                                <Carousel>
-                                                        <Carousel.Item>
-                                                                <Image
-                                                                        className="d-block w-100"
-                                                                        src={
-                                                                                slide01
-                                                                        }
-                                                                        alt="First slide"
-                                                                        fluid
-                                                                        style={{
-                                                                                objectFit: "cover",
-                                                                        }}
-                                                                />
-                                                                {/* <Carousel.Caption
+const Slider = () => {
+        return (
+                <Container fluid style={{ height: "calc(100vh - 77px)" }}>
+                        <Row className="max-height">
+                                <Col xs={10} className="mx-auto div-col">
+                                        <Carousel>
+                                                <Carousel.Item>
+                                                        <Image
+                                                                className="d-block w-100"
+                                                                src={slide01}
+                                                                alt="First slide"
+                                                                fluid
+                                                                style={{
+                                                                        objectFit: "cover",
+                                                                }}
+                                                        />
+                                                        {/* <Carousel.Caption
                                                                         className="text-left"
                                                                         data-aos="fade-down"
                                                                         // data-aos-offset="300"
@@ -100,21 +91,19 @@ class Slider extends Component {
                                                                                 Now
                                                                         </Button>
                                                                 </Carousel.Caption> */}
-                                                        </Carousel.Item>
-                                                        <Carousel.Item>
-                                                                <Image
-                                                                        className="d-block w-100"
-                                                                        src={
-                                                                                slide02
-                                                                        }
-                                                                        alt="Third slide"
-                                                                        fluid
-                                                                        style={{
-                                                                                objectFit: "cover",
-                                                                        }}
-                                                                />
+                                                </Carousel.Item>
+                                                <Carousel.Item>
+                                                        <Image
+                                                                className="d-block w-100"
+                                                                src={slide02}
+                                                                alt="Third slide"
+                                                                fluid
+                                                                style={{
+                                                                        objectFit: "cover",
+                                                                }}
+                                                        />
 
-                                                                {/* <Carousel.Caption
+                                                        {/* <Carousel.Caption
                                                                         data-aos="fade-right"
                                                                         className="text-left"
                                                                 >
@@ -142,21 +131,19 @@ class Slider extends Component {
                                                                                 Now
                                                                         </Button>
                                                                 </Carousel.Caption> */}
-                                                        </Carousel.Item>
-                                                        <Carousel.Item>
-                                                                <Image
-                                                                        className="d-block w-100"
-                                                                        src={
-                                                                                slide03
-                                                                        }
-                                                                        alt="Third slide"
-                                                                        fluid
-                                                                        style={{
-                                                                                objectFit: "cover",
-                                                                        }}
-                                                                />
+                                                </Carousel.Item>
+                                                <Carousel.Item>
+                                                        <Image
+                                                                className="d-block w-100"
+                                                                src={slide03}
+                                                                alt="Third slide"
+                                                                fluid
+                                                                style={{
+                                                                        objectFit: "cover",
+                                                                }}
+                                                        />
 
-                                                                {/* <Carousel.Caption
+                                                        {/* <Carousel.Caption
                                                                         data-aos="fade-right"
                                                                         className="text-left"
                                                                 >
@@ -184,13 +171,12 @@ class Slider extends Component {
                                                                                 Now
                                                                         </Button>
                                                                 </Carousel.Caption> */}
-                                                        </Carousel.Item>
-                                                </Carousel>
-                                        </Col>
-                                </Row>
-                        </Container>
-                );
-        }
-}
+                                                </Carousel.Item>
+                                        </Carousel>
+                                </Col>
+                        </Row>
+                </Container>
+        );
+};
 
 export default Slider;

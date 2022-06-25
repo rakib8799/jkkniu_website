@@ -28,9 +28,17 @@
 
 .btn-main {
         background: linear-gradient(to right, #9c3230, #ff706e);
+        transition: all 0.5s linear 0s;
+}
+.btn-main:hover {
+        background: linear-gradient(to left, #9c3230, #ff706e);
 }
 .btn-optional {
         background: linear-gradient(to right, #137e60, #4dddb4);
+        transition: all 0.5s linear 0s;
+}
+.btn-optional:hover {
+        background: linear-gradient(to left, #137e60, #4dddb4);
 }
 
 #messages {

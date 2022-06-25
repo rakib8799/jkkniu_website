@@ -5,7 +5,7 @@ import "../../container/courses/courses.css";
 import { Link, useParams } from "react-router-dom";
 import ControlledTab from "./ControlledTab";
 
-function IndividualDepartment() {
+const IndividualDepartment = () => {
         // render() {
         const params = useParams();
 
@@ -118,7 +118,7 @@ function IndividualDepartment() {
                         </Container>
                 </section>
         );
-}
+};
 // }
 
 export default IndividualDepartment;

@@ -69,35 +69,38 @@ const Teachers = () => {
                                                 See details
                                         </Link>
                                 </div>
-                                <ul class="social">
+                                <ul className="social">
                                         <li>
-                                                <a class="facebook" href="#fb">
-                                                        <i class="fab fa-facebook-f"></i>
-                                                </a>
+                                                <Link
+                                                        className="facebook"
+                                                        to="/fb"
+                                                >
+                                                        <i className="fab fa-facebook-f"></i>
+                                                </Link>
                                         </li>
                                         <li>
-                                                <a
-                                                        class="twitter"
-                                                        href="#twitter"
+                                                <Link
+                                                        className="twitter"
+                                                        to="/twitter"
                                                 >
-                                                        <i class="fab fa-twitter"></i>
-                                                </a>
+                                                        <i className="fab fa-twitter"></i>
+                                                </Link>
                                         </li>
                                         <li>
-                                                <a
-                                                        class="dribbble"
-                                                        href="#dribble"
+                                                <Link
+                                                        className="dribbble"
+                                                        to="/dribble"
                                                 >
-                                                        <i class="fab fa-dribbble"></i>
-                                                </a>
+                                                        <i className="fab fa-dribbble"></i>
+                                                </Link>
                                         </li>
                                         <li>
-                                                <a
-                                                        class="linkedin"
-                                                        href="#linkedin"
+                                                <Link
+                                                        className="linkedin"
+                                                        to="/linkedin"
                                                 >
-                                                        <i class="fab fa-linkedin-in"></i>
-                                                </a>
+                                                        <i className="fab fa-linkedin-in"></i>
+                                                </Link>
                                         </li>
                                 </ul>
                         </div>

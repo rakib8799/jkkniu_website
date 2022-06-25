@@ -1,6 +1,12 @@
 .btn-main {
         background: linear-gradient(to right, #9c3230, #ff706e);
 }
+.btn-main:hover {
+        background: linear-gradient(to left, #9c3230, #ff706e);
+}
 .btn-optional {
         background: linear-gradient(to right, #137e60, #4dddb4);
+}
+.btn-optional:hover {
+        background: linear-gradient(to left, #137e60, #4dddb4);
 }
