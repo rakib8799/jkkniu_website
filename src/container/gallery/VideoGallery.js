@@ -5,7 +5,7 @@ const VideoGallery = () => {
         return (
                 <Container fluid>
                         <Row>
-                                <Col className="mx-auto text-center mt-5 mb-5">
+                                <Col className="mx-auto text-center mt-5 mb-3">
                                         <h1 style={{ color: "brown" }}>
                                                 Videography
                                         </h1>

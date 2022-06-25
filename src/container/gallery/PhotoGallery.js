@@ -21,7 +21,7 @@ class PhotoGallery extends Component {
                         >
                                 <Container fluid className="message-container">
                                         <Row>
-                                                <Col className="mx-auto my-3 text-center text-capitalize">
+                                                <Col className="mx-auto mt-5 mb-3 text-center text-capitalize">
                                                         <h1>
                                                                 University{" "}
                                                                 <strong

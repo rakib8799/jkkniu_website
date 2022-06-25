@@ -25,7 +25,7 @@ const LatestEvents = () => {
                         xs={10}
                         sm={6}
                         lg={4}
-                        className="course-item mx-auto my-3"
+                        className="course-item mx-auto"
                         key={course + index}
                         data-aos="fade-up"
                 >
@@ -68,7 +68,7 @@ const LatestEvents = () => {
         return (
                 <Container>
                         <Row>
-                                <Col className="mx-auto mt-5 text-capitalize text-center mb-5">
+                                <Col className="mx-auto mt-5 text-capitalize text-center mb-3">
                                         <h1>
                                                 Latest{" "}
                                                 <strong
