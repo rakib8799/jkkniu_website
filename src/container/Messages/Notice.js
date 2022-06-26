@@ -37,7 +37,7 @@ const Notice = () => {
                         xs={10}
                         sm={6}
                         lg={4}
-                        className="course-item mx-auto my-3"
+                        className="course-item mx-auto my-3 position-relative"
                         key={course + index}
                         data-aos="fade-up"
                 >
@@ -62,8 +62,11 @@ const Notice = () => {
                                         <Card.Text>
                                                 Published: 2022-06-06
                                         </Card.Text>
-                                        <div className="text-center">
-                                                <Button className="btn btn-optional text-center">
+                                        <div className="">
+                                                <Button
+                                                        className="btn btn-optional position-absolute mb-3"
+                                                        style={{ bottom: "0" }}
+                                                >
                                                         View Notice
                                                 </Button>
                                         </div>

@@ -5,45 +5,30 @@ import "./header.css";
 import { Link } from "react-router-dom";
 
 const Topbar = () => {
-        // const [show, setShow] = useState({
-        //         showAcademics: false,
-        //         showAdministration: false,
-        //         showStudents: false,
-        //         showResearch: false,
-        //         showLinks: false,
-        // });
-        // const [showAdministration, setShowAdministration] = useState(false);
-        // const [showStudents, setStudents] = useState(false);
-        // const [showResearch, setShowResearch] = useState(false);
-        // const [showLinks, setShowLinks] = useState(false);
-        // const showDropdown = (e) => {
-        //         setShow(!show);
-        // };
-        // const hideDropdown = (e) => {
-        //         setShow(false);
-        // };
         // const styles = {
         //         Link: {
         //                 fontSize: "10px",
         //         },
         // };
-        // render() {
         return (
                 <Navbar
                         expand="lg"
-                        className="px-2 text-uppercase font-weight-bold"
+                        className="px-2 font-weight-bold"
                         style={{
                                 background: "linear-gradient(to right,#137e60,#4dddb4)",
                         }}
                 >
                         <Link to="/">
-                                <Navbar.Brand href="#home">
+                                <Navbar.Brand href="/">
                                         <img
                                                 src={logo}
                                                 alt="logo"
                                                 style={{ width: "3.6vw" }}
                                         />
-                                        <span> Nazrul University</span>
+                                        <span className="text-white">
+                                                {" "}
+                                                Nazrul University
+                                        </span>
                                 </Navbar.Brand>
                         </Link>
                         <Navbar.Toggle aria-controls="basic-navbar-nav" />
@@ -56,7 +41,11 @@ const Topbar = () => {
                                         </Link> */}
 
                                         <Link to="/about">
-                                                <Nav.Link href="#about">
+                                                <Nav.Link
+                                                        href="/about"
+                                                        className="text-uppercase"
+                                                        id="about-link"
+                                                >
                                                         About
                                                 </Nav.Link>
                                         </Link>
@@ -64,11 +53,12 @@ const Topbar = () => {
                                         <NavDropdown
                                                 title="Academics"
                                                 id="academic-dropdown"
-                                                // show={show.showAcademics}
+                                                className="text-uppercase"
+                                                // show={showAcademics}
                                                 // onMouseEnter={showDropdown}
                                                 // onMouseLeave={hideDropdown}
                                         >
-                                                <div className="text-center">
+                                                <div className="text-capitalize">
                                                         <Link to="/">
                                                                 <NavDropdown.Item href="/">
                                                                         Academic
@@ -93,7 +83,7 @@ const Topbar = () => {
                                                         </Link>
                                                         <Link to="/">
                                                                 <NavDropdown.Item href="/">
-                                                                        INSTITUTE/CENTER/CELL
+                                                                        Institute/Center/Cell
                                                                 </NavDropdown.Item>
                                                         </Link>
                                                 </div>
@@ -102,11 +92,12 @@ const Topbar = () => {
                                         <NavDropdown
                                                 title="Administration"
                                                 id="administration-dropdown"
+                                                className="text-uppercase"
                                                 // show={show.showAdministration}
                                                 // onMouseEnter={showDropdown}
                                                 // onMouseLeave={hideDropdown}
                                         >
-                                                <div className="text-center">
+                                                <div className="text-capitalize">
                                                         <Link to="/">
                                                                 <NavDropdown.Item href="/">
                                                                         Vice
@@ -185,8 +176,9 @@ const Topbar = () => {
                                         <NavDropdown
                                                 title="Facilities"
                                                 id="facilities-dropdown"
+                                                className="text-uppercase"
                                         >
-                                                <div className="text-center">
+                                                <div className="text-capitalize">
                                                         <Link to="/">
                                                                 <NavDropdown.Item href="/">
                                                                         Central
@@ -212,8 +204,8 @@ const Topbar = () => {
                                                         </Link>
                                                         <Link to="/">
                                                                 <NavDropdown.Item href="/">
-                                                                        RESIDENTIAL
-                                                                        HALLS
+                                                                        Residential
+                                                                        Halls
                                                                 </NavDropdown.Item>
                                                         </Link>
                                                 </div>
@@ -222,8 +214,9 @@ const Topbar = () => {
                                         <NavDropdown
                                                 title="Publications"
                                                 id="publications-dropdown"
+                                                className="text-uppercase"
                                         >
-                                                <div className="text-center">
+                                                <div className="text-capitalize">
                                                         <Link to="/">
                                                                 <NavDropdown.Item href="/">
                                                                         Journals
@@ -238,10 +231,11 @@ const Topbar = () => {
                                                 </div>
                                         </NavDropdown>
                                         <NavDropdown
-                                                title="ADMISSION"
+                                                title="Admission"
                                                 id="admission-dropdown"
+                                                className="text-uppercase"
                                         >
-                                                <div className="text-center">
+                                                <div className="text-capitalize">
                                                         <Link to="/">
                                                                 <NavDropdown.Item href="/">
                                                                         Undergraduate
@@ -260,8 +254,9 @@ const Topbar = () => {
                                         <NavDropdown
                                                 title="Links"
                                                 id="links-dropdown"
+                                                className="text-uppercase"
                                         >
-                                                <div className="text-center">
+                                                <div className="text-capitalize">
                                                         <Link to="/">
                                                                 <NavDropdown.Item href="/">
                                                                         JKKNIU
@@ -345,6 +340,5 @@ const Topbar = () => {
                 </Navbar>
         );
 };
-// }
 
 export default Topbar;

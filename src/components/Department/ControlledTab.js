@@ -6,12 +6,12 @@ import Teachers from "./Teachers";
 const ControlledTab = () => {
         const [key, setKey] = useState("home");
         return (
-                <div>
+                <div className="">
                         <Tabs
                                 id="controlled-tab-example"
                                 activeKey={key}
                                 onSelect={(k) => setKey(k)}
-                                className="mb-3"
+                                className="mt-5 mb-3 d-flex justify-content-center"
                         >
                                 {/* <Tab eventKey="home" title="Home">
                                         <h2>Ami</h2>

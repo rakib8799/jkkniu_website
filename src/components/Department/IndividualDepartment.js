@@ -1,5 +1,5 @@
 import React from "react";
-import { Container, Row, Col, Card } from "react-bootstrap";
+import { Container, Row, Col, Card, Button } from "react-bootstrap";
 import course01 from "../../images/course01.jpeg";
 import "../../container/courses/courses.css";
 import { Link, useParams } from "react-router-dom";
@@ -15,16 +15,29 @@ const IndividualDepartment = () => {
                         shortForm: "Course1",
                         image: course01,
                 },
+                {
+                        courses: "Course 2",
+                        shortForm: "Course2",
+                        image: course01,
+                },
+                {
+                        courses: "Course 3",
+                        shortForm: "Course3",
+                        image: course01,
+                },
         ].map((course, index) => (
                 <Col
                         xs={10}
-                        sm={10}
-                        lg={10}
-                        className="course-item mx-auto my-3"
+                        sm={6}
+                        lg={4}
+                        className="course-item mx-auto my-3 position-relative"
                         key={course + index}
                         data-aos="fade-up"
                 >
-                        <Card className="course-card">
+                        <Card
+                                className="course-card"
+                                style={{ height: "65vh" }}
+                        >
                                 <div className="img-container">
                                         <Card.Img
                                                 variant="top"
@@ -40,18 +53,20 @@ const IndividualDepartment = () => {
                                                 {course.courses}
                                         </Card.Title>
                                         <Card.Text>
-                                                <div className="d-flex">
-                                                        <div>Department</div>
-                                                        <div>Duration</div>
-                                                        <div>Credits</div>
-                                                </div>
+                                                <p>
+                                                        Lorem ipsum dolor sit
+                                                        amet consectetur
+                                                        adipisicing elit. Eaque,
+                                                        accusantium.
+                                                </p>
                                         </Card.Text>
-                                        <div className="text-center">
+                                        <div className="">
                                                 <Link
                                                         to={`/course/${course.shortForm}`}
-                                                        className="btn btn-optional text-center"
+                                                        className="btn btn-optional text-white position-absolute mb-3"
+                                                        style={{ bottom: "0" }}
                                                 >
-                                                        Download Syllabus
+                                                        View Details
                                                 </Link>
                                         </div>
                                 </Card.Body>
@@ -62,14 +77,14 @@ const IndividualDepartment = () => {
         return (
                 <section id="courses" className="courses py-5">
                         {/* <div>Department: {params.department}</div> */}
-                        <Container fluid>
+                        <Container>
                                 <Row>
                                         <Col
                                                 xs={10}
                                                 sm={6}
                                                 className="mx-auto text-center course-title"
                                         >
-                                                <h1 className="text-capitalize text-dark">
+                                                <h3 className="text-capitalize text-dark">
                                                         {/* Our Featured{" "} */}
                                                         <strong
                                                                 style={{
@@ -80,21 +95,66 @@ const IndividualDepartment = () => {
                                                                         params.department
                                                                 }
                                                         </strong>
-                                                </h1>
+                                                </h3>
                                                 <p
                                                         style={{
                                                                 borderTop: "3px solid white",
-                                                                width: 70,
-                                                                marginTop: 20,
+                                                                // width: 70,
+                                                                // marginTop: 20,
                                                         }}
                                                 ></p>
-                                                <p
-                                                        className="text-muted"
-                                                        data-aos="fade-up"
-                                                >
-                                                        Total Students 400 Total
-                                                        Teachers 12 Total Staffs
-                                                </p>
+                                                <div className="d-flex">
+                                                        <div
+                                                                style={{
+                                                                        marginRight:
+                                                                                "2rem",
+                                                                }}
+                                                        >
+                                                                <p
+                                                                        className="text-muted"
+                                                                        data-aos="fade-up"
+                                                                >
+                                                                        Total
+                                                                        Students
+                                                                        400
+                                                                </p>
+                                                                <p
+                                                                        className="text-muted"
+                                                                        data-aos="fade-up"
+                                                                >
+                                                                        Total
+                                                                        Teachers
+                                                                        12
+                                                                </p>
+                                                                <p
+                                                                        className="text-muted"
+                                                                        data-aos="fade-up"
+                                                                >
+                                                                        Total
+                                                                        Staffs 4
+                                                                </p>
+                                                        </div>
+                                                        <div>
+                                                                <p
+                                                                        className="text-muted"
+                                                                        data-aos="fade-up"
+                                                                >
+                                                                        Department
+                                                                </p>
+                                                                <p
+                                                                        className="text-muted"
+                                                                        data-aos="fade-up"
+                                                                >
+                                                                        Duration
+                                                                </p>
+                                                                <p
+                                                                        className="text-muted"
+                                                                        data-aos="fade-up"
+                                                                >
+                                                                        Credits
+                                                                </p>
+                                                        </div>
+                                                </div>
                                         </Col>
                                 </Row>
                                 <Row>{displayCourses}</Row>
@@ -110,6 +170,18 @@ const IndividualDepartment = () => {
                                                 </div>
                                         </Col>
                                 </Row> */}
+                                <Row>
+                                        <Col className="mx-auto text-center">
+                                                <Button
+                                                        className="btn btn-main"
+                                                        style={{
+                                                                margin: "20px 0",
+                                                        }}
+                                                >
+                                                        Download Syllabus
+                                                </Button>
+                                        </Col>
+                                </Row>
                                 <Row>
                                         <Col>
                                                 <ControlledTab />

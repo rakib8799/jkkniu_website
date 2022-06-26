@@ -40,13 +40,13 @@ const Message = () => {
                         xs={10}
                         sm={6}
                         lg={4}
-                        className="course-item mx-auto my-3"
+                        className="course-item mx-auto my-3 position-relative"
                         key={news + index}
                         data-aos="fade-up"
                 >
                         <Card
                                 className="course-card"
-                                style={{ height: "60vh" }}
+                                style={{ height: "65vh" }}
                         >
                                 <div className="img-container">
                                         <Card.Img
@@ -72,8 +72,11 @@ const Message = () => {
                                                         bulk of the card's
                                                         content.
                                                 </Card.Text> */}
-                                        <div className="text-center">
-                                                <Button className="btn btn-optional text-center">
+                                        <div className="">
+                                                <Button
+                                                        className="btn btn-optional position-absolute mb-3"
+                                                        style={{ bottom: "0" }}
+                                                >
                                                         View Full News
                                                 </Button>
                                         </div>

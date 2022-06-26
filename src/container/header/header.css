@@ -53,3 +53,39 @@ a:hover {
                 font-size: 1.7rem;
         }
 }
+
+.dropdown-menu {
+        background-color: #4bdab1;
+}
+#academic-dropdown,
+#administration-dropdown,
+#facilities-dropdown,
+#publications-dropdown,
+#admission-dropdown,
+#links-dropdown {
+        color: white;
+}
+#academic-dropdown:hover,
+#administration-dropdown:hover,
+#facilities-dropdown:hover,
+#publications-dropdown:hover,
+#admission-dropdown:hover,
+#links-dropdown:hover,
+#about-link:hover {
+        font-weight: 700;
+}
+
+/* .nav-link a {
+        color: white;
+} */
+.dropdown a,
+#about-link {
+        color: white;
+        font-weight: 600;
+}
+.dropdown a:hover {
+        background-color: transparent;
+        /* margin-left: 1rem; */
+        color: white;
+        font-weight: 700;
+}

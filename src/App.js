@@ -35,8 +35,8 @@ const App = () => {
                         <Switch>
                                 <Route exact path="/">
                                         <Slider />
-                                        <About />
                                         <Info />
+                                        <About />
                                         <Message />
                                         <VideoPage />
                                         {/* <Count /> */}
