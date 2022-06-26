@@ -42,11 +42,14 @@ const FacultyPage = () => {
                         xs={10}
                         sm={6}
                         lg={4}
-                        className="course-item mx-auto my-3"
+                        className="course-item mx-auto my-3 position-relative"
                         key={faculty + index}
                         data-aos="fade-up"
                 >
-                        <Card className="course-card">
+                        <Card
+                                className="course-card"
+                                style={{ height: "70vh" }}
+                        >
                                 <div className="img-container">
                                         <Card.Img
                                                 variant="top"
@@ -66,10 +69,12 @@ const FacultyPage = () => {
                                                 on the card title and make up
                                                 the bulk of the card's content.
                                         </Card.Text>
-                                        <div className="text-center">
+
+                                        <div className="">
                                                 <Link
                                                         to={`/faculty/${faculty.shortForm}`}
-                                                        className="btn btn-optional text-center"
+                                                        className="btn btn-optional position-absolute mb-3 text-white"
+                                                        style={{ bottom: "0" }}
                                                 >
                                                         See Details
                                                 </Link>

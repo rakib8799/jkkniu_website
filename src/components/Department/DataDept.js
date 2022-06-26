@@ -15,7 +15,10 @@ const DataDept = ({ dept }) => {
                                 className="course-item mx-auto my-3"
                                 data-aos="fade-up"
                         >
-                                <Card className="course-card">
+                                <Card
+                                        className="course-card"
+                                        style={{ height: "70vh" }}
+                                >
                                         <div className="img-container">
                                                 <Card.Img
                                                         variant="top"
@@ -35,10 +38,13 @@ const DataDept = ({ dept }) => {
                                                         bulk of the card's
                                                         content.
                                                 </Card.Text>
-                                                <div className="text-center">
+                                                <div className="">
                                                         <Link
                                                                 to={`/department/${dept}`}
-                                                                className="btn btn-optional text-center"
+                                                                className="btn btn-optional position-absolute mb-3 text-white"
+                                                                style={{
+                                                                        bottom: "0",
+                                                                }}
                                                         >
                                                                 See Details
                                                         </Link>
