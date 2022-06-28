@@ -1,6 +1,6 @@
 import React from "react";
 import { Container, Row, Col, Image } from "react-bootstrap";
-import aboutPic from "../../images/course01.jpeg";
+// import aboutPic from "../../images/course01.jpeg";
 
 const InfoPage = () => {
         return (
@@ -189,7 +189,7 @@ const InfoPage = () => {
                                         >
                                                 <div className="about-img_container">
                                                         <Image
-                                                                src={aboutPic}
+                                                                src="https://res.cloudinary.com/mkrakib/image/upload/v1656415011/JKKNIU_Images/College_Logo_tnoszo.png"
                                                                 fluid
                                                                 style={{
                                                                         border: "1px solid brown",

@@ -109,15 +109,15 @@ const Department = () => {
                         >
                                 <Row>
                                         <Col>
-                                                <h1>Department</h1>
+                                                <h1>Departments</h1>
                                                 <p>
-                                                        Academics / Faculty /{" "}
+                                                        Academics / Faculties /{" "}
                                                         <span
                                                                 style={{
                                                                         color: "brown",
                                                                 }}
                                                         >
-                                                                Department
+                                                                Departments
                                                         </span>
                                                 </p>
                                         </Col>

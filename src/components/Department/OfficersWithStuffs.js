@@ -1,7 +1,7 @@
 import React from "react";
 import { Container, Row, Col, Button, Image } from "react-bootstrap";
 // import course01 from "../../images/course01.jpeg";
-import avatar from "../../images/avatar.jpg";
+// import avatar from "../../images/avatar.jpg";
 import "../Faculty/faculty.css";
 import { Link } from "react-router-dom";
 
@@ -10,17 +10,17 @@ const OfficersWithStuffs = () => {
                 {
                         stuffs: "Staff 1",
                         shortForm: "Staff1",
-                        image: avatar,
+                        image: "https://res.cloudinary.com/mkrakib/image/upload/v1656415010/JKKNIU_Images/avatar_ynikah.jpg",
                 },
                 {
                         stuffs: "Staff 2",
                         shortForm: "Staff2",
-                        image: avatar,
+                        image: "https://res.cloudinary.com/mkrakib/image/upload/v1656415010/JKKNIU_Images/avatar_ynikah.jpg",
                 },
                 {
                         stuffs: "Staff 3",
                         shortForm: "Staff3",
-                        image: avatar,
+                        image: "https://res.cloudinary.com/mkrakib/image/upload/v1656415010/JKKNIU_Images/avatar_ynikah.jpg",
                 },
         ].map((stuffs, index) => (
                 <Col xs={12} sm={6} md={4} lg={4} key={index + stuffs}>

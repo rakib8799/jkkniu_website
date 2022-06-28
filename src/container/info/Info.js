@@ -1,7 +1,7 @@
 import React from "react";
 import { Col, Container, Image, Row } from "react-bootstrap";
 import { Link } from "react-router-dom";
-import vc_sir from "../../images/vc_sir.jpg";
+// import vc_sir from "../../images/vc_sir.jpg";
 import "./Info.css";
 
 const Info = () => {
@@ -22,7 +22,7 @@ const Info = () => {
                                         >
                                                 <div className="about-img_container">
                                                         <Image
-                                                                src={vc_sir}
+                                                                src="https://res.cloudinary.com/mkrakib/image/upload/v1656415008/JKKNIU_Images/vc_sir_hxnvlu.jpg"
                                                                 fluid
                                                         />
                                                 </div>

@@ -1,8 +1,8 @@
 import React from "react";
 import { Container, Row, Col, Carousel, Image } from "react-bootstrap";
-import slide01 from "../../images/slide-01.png";
-import slide02 from "../../images/slide-02.png";
-import slide03 from "../../images/slide-03.png";
+// import slide01 from "https://res.cloudinary.com/mkrakib/image/upload/v1656415012/JKKNIU_Images/slide-01_fjjup1.png";
+// import slide02 from "../../images/slide-02.png";
+// import slide03 from "../../images/slide-03.png";
 import "./header.css";
 
 const Slider = () => {
@@ -14,7 +14,7 @@ const Slider = () => {
                                                 <Carousel.Item>
                                                         <Image
                                                                 // className="d-block w-100"
-                                                                src={slide01}
+                                                                src="https://res.cloudinary.com/mkrakib/image/upload/v1656415012/JKKNIU_Images/slide-01_fjjup1.png"
                                                                 alt="First slide"
                                                                 // fluid
                                                                 style={{
@@ -97,7 +97,7 @@ const Slider = () => {
                                                 <Carousel.Item>
                                                         <Image
                                                                 // className="d-block w-100"
-                                                                src={slide02}
+                                                                src="https://res.cloudinary.com/mkrakib/image/upload/v1656415011/JKKNIU_Images/slide-02_r5bfqg.png"
                                                                 alt="Third slide"
                                                                 // fluid
                                                                 style={{
@@ -139,7 +139,7 @@ const Slider = () => {
                                                 <Carousel.Item>
                                                         <Image
                                                                 // className="d-block w-100"
-                                                                src={slide03}
+                                                                src="https://res.cloudinary.com/mkrakib/image/upload/v1656415011/JKKNIU_Images/slide-03_s6c3q2.png"
                                                                 alt="Third slide"
                                                                 // fluid
                                                                 style={{

@@ -1,6 +1,6 @@
 import React from "react";
 import { Navbar, Nav, NavDropdown } from "react-bootstrap";
-import logo from "../../images/logo.png";
+// import logo from "../../images/logo.png";
 import "./header.css";
 import { Link } from "react-router-dom";
 
@@ -21,7 +21,7 @@ const Topbar = () => {
                         <Link to="/">
                                 <Navbar.Brand href="/">
                                         <img
-                                                src={logo}
+                                                src="https://res.cloudinary.com/mkrakib/image/upload/v1656415010/JKKNIU_Images/logo_up1skz.png"
                                                 alt="logo"
                                                 style={{ width: "3.6vw" }}
                                         />

@@ -1,6 +1,6 @@
 import React from "react";
 import { Container, Row, Col, Card, Button } from "react-bootstrap";
-import course01 from "../../images/course01.jpeg";
+// import course01 from "../../images/course01.jpeg";
 import "../../container/courses/courses.css";
 import "../../container/about/about.css";
 import { Link } from "react-router-dom";
@@ -10,32 +10,32 @@ const FacultyPage = () => {
                 {
                         faculty: "FACULTY OF ARTS",
                         shortForm: "FACARTS",
-                        image: "https://picsum.photos/130/130?image=1027",
+                        // image: "https://picsum.photos/130/130?image=1027",
                 },
                 {
                         faculty: "FACULTY OF FINE ARTS",
                         shortForm: "FACFINEARTS",
-                        image: "https://picsum.photos/130/130?image=1027",
+                        // image: "https://picsum.photos/130/130?image=1027",
                 },
                 {
                         faculty: "FACULTY OF SCIENCE AND ENGINEERING",
                         shortForm: "FACSCI",
-                        image: "https://picsum.photos/130/130?image=1027",
+                        // image: "https://picsum.photos/130/130?image=1027",
                 },
                 {
                         faculty: "FACULTY OF SOCIAL SCIENCE",
                         shortForm: "FACSOCIALSCI",
-                        image: "https://picsum.photos/130/130?image=1027",
+                        // image: "https://picsum.photos/130/130?image=1027",
                 },
                 {
                         faculty: "FACULTY OF LAW",
                         shortForm: "FACLAW",
-                        image: "https://picsum.photos/130/130?image=1027",
+                        // image: "https://picsum.photos/130/130?image=1027",
                 },
                 {
                         faculty: "FACULTY OF BUSINESS ADMINISTRATION",
                         shortForm: "FACBUSINESS",
-                        image: "https://picsum.photos/130/130?image=1027",
+                        // image: "https://picsum.photos/130/130?image=1027",
                 },
         ].map((faculty, index) => (
                 <Col
@@ -53,7 +53,7 @@ const FacultyPage = () => {
                                 <div className="img-container">
                                         <Card.Img
                                                 variant="top"
-                                                src={course01}
+                                                src="https://res.cloudinary.com/mkrakib/image/upload/v1656415008/JKKNIU_Images/course01_wqyi2l.jpg"
                                                 className="course-img"
                                         />
                                         <span className="course-item-icon">
@@ -96,7 +96,7 @@ const FacultyPage = () => {
                         >
                                 <Row>
                                         <Col>
-                                                <h1>Faculty</h1>
+                                                <h1>Faculties</h1>
                                                 <p>
                                                         Academics /{" "}
                                                         <span
@@ -104,7 +104,7 @@ const FacultyPage = () => {
                                                                         color: "brown",
                                                                 }}
                                                         >
-                                                                Faculty
+                                                                Faculties
                                                         </span>
                                                 </p>
                                         </Col>
@@ -124,7 +124,7 @@ const FacultyPage = () => {
                                                                         color: "brown",
                                                                 }}
                                                         >
-                                                                Faculty
+                                                                Faculties
                                                         </strong>
                                                 </h1>
                                                 <p

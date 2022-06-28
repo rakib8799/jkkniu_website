@@ -1,6 +1,6 @@
 import React from "react";
 import { Container, Row, Col, Image } from "react-bootstrap";
-import aboutPic from "../../images/course01.jpeg";
+// import aboutPic from "../../images/course01.jpeg";
 
 const AboutPage = () => {
         return (
@@ -131,9 +131,8 @@ const AboutPage = () => {
                                                         className="my-4 text-muted w-75 about-text"
                                                         data-aos="fade-right"
                                                 >
-                                                        Thapar Institute of
-                                                        Engineering &
-                                                        Technology, which
+                                                        Jatiya Kabi Kazi Nazrul
+                                                        Islam University, which
                                                         comprises of
                                                         inter-disciplinary
                                                         exploration and
@@ -189,7 +188,7 @@ const AboutPage = () => {
                                         >
                                                 <div className="about-img_container">
                                                         <Image
-                                                                src={aboutPic}
+                                                                src="https://res.cloudinary.com/mkrakib/image/upload/v1656415016/JKKNIU_Images/clogo_yomujv.png"
                                                                 fluid
                                                                 style={{
                                                                         border: "1px solid brown",

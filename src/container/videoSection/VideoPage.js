@@ -1,6 +1,6 @@
 import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
-import jkkniu from "../../videos/JKKNIU.mp4";
+// import jkkniu from "../../videos/JKKNIU.mp4";
 import "./video.css";
 // import CountUp from "react-countup";
 
@@ -34,7 +34,7 @@ const VideoPage = () => {
                                                         // controls
                                                 >
                                                         <source
-                                                                src={jkkniu}
+                                                                src="https://res.cloudinary.com/mkrakib/video/upload/v1656417010/JKKNIU_Images/JKKNIU_hjxnqx.mp4"
                                                                 type="video/mp4"
                                                         ></source>
                                                 </video>
