@@ -1,7 +1,7 @@
 import React from "react";
 import { Col, Container, Image, Row } from "react-bootstrap";
 import { Link } from "react-router-dom";
-// import college from "../../images/College Logo.png";
+import aboutPic from "../../images/about.jpg";
 import "./about.css";
 
 const About = () => {
@@ -78,7 +78,7 @@ const About = () => {
                                         >
                                                 <div className="about-img_container">
                                                         <Image
-                                                                src="https://res.cloudinary.com/mkrakib/image/upload/v1656415011/JKKNIU_Images/College_Logo_tnoszo.png"
+                                                                src={aboutPic}
                                                                 fluid
                                                                 className="rounded"
                                                         />

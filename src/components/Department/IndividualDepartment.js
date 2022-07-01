@@ -1,6 +1,7 @@
 import React from "react";
-import { Container, Row, Col, Card, Button, Image } from "react-bootstrap";
-// import course01 from "../../images/course01.jpeg";
+import { Container, Row, Col, Card, Button } from "react-bootstrap";
+import course01 from "../../images/course01.jpg";
+import avatar from "../../images/avatar.jpg";
 import "../../container/courses/courses.css";
 import "../../container/about/about.css";
 import { Link, useParams } from "react-router-dom";
@@ -12,19 +13,19 @@ const IndividualDepartment = () => {
 
         const displayCourses = [
                 {
-                        courses: "Course 1",
-                        shortForm: "Course1",
-                        // image: course01,
+                        courses: "Program 1",
+                        shortForm: "Program1",
+                        image: course01,
                 },
                 {
-                        courses: "Course 2",
-                        shortForm: "Course2",
-                        // image: course01,
+                        courses: "Program 2",
+                        shortForm: "Program2",
+                        image: course01,
                 },
                 {
-                        courses: "Course 3",
-                        shortForm: "Course3",
-                        // image: course01,
+                        courses: "Program 3",
+                        shortForm: "Program3",
+                        image: course01,
                 },
         ].map((course, index) => (
                 <Col
@@ -42,8 +43,7 @@ const IndividualDepartment = () => {
                                 <div className="img-container">
                                         <Card.Img
                                                 variant="top"
-                                                // src={course01}
-                                                src="https://res.cloudinary.com/mkrakib/image/upload/v1656415008/JKKNIU_Images/course01_wqyi2l.jpg"
+                                                src={course01}
                                                 className="course-img"
                                         />
                                         <span className="course-item-icon">
@@ -85,18 +85,43 @@ const IndividualDepartment = () => {
                                         <Col
                                                 xs={10}
                                                 sm={6}
-                                                lg={4}
-                                                className="mx-auto text-center course-title"
+                                                lg={5}
+                                                className="text-center"
                                         >
-                                                <Image
-                                                        src="https://res.cloudinary.com/mkrakib/image/upload/v1656415008/JKKNIU_Images/course01_wqyi2l.jpg"
-                                                        fluid
+                                                <h3>
+                                                        Message from Department
+                                                        Head
+                                                </h3>
+                                                <img
+                                                        src={avatar}
+                                                        alt=""
+                                                        className="img-fluid"
                                                 />
+                                                <p className="text-muted text-justify">
+                                                        Jatiya Kabi Kazi Nazrul
+                                                        Islam University was
+                                                        established by the
+                                                        Government of Bangladesh
+                                                        on 01 March 2005. The
+                                                        academic program of this
+                                                        university started on 03
+                                                        June 2007 with four
+                                                        departments under two
+                                                        Faculties. The
+                                                        department of Computer
+                                                        Science and Engineering
+                                                        is one of them. The
+                                                        development of the
+                                                        present state of the
+                                                        society greatly depends
+                                                        on technological
+                                                        improvement.
+                                                </p>
                                         </Col>
                                         <Col
                                                 xs={10}
                                                 sm={6}
-                                                lg={8}
+                                                lg={7}
                                                 className="mx-auto text-center course-title"
                                         >
                                                 <h2 className="text-capitalize text-dark text-center">
@@ -222,7 +247,7 @@ const IndividualDepartment = () => {
                                 <h2 className="text-center text-capitalize mt-5">
                                         our <s />
                                         <strong style={{ color: "brown" }}>
-                                                Courses
+                                                Programs
                                         </strong>
                                 </h2>
 

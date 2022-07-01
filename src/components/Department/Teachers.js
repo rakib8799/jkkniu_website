@@ -1,7 +1,7 @@
 import React from "react";
 import { Container, Row, Col, Image, Card } from "react-bootstrap";
 // import course01 from "../../images/course01.jpeg";
-// import avatar from "../../images/avatar.jpg";
+import avatar from "../../images/avatar.jpg";
 import "../Faculty/faculty.css";
 import { Link } from "react-router-dom";
 
@@ -10,47 +10,47 @@ const Teachers = () => {
                 {
                         teacher: "Teacher 1",
                         shortForm: "Teacher1",
-                        image: "https://res.cloudinary.com/mkrakib/image/upload/v1656415010/JKKNIU_Images/avatar_ynikah.jpg",
+                        image: avatar,
                 },
                 {
                         teacher: "Teacher 2",
                         shortForm: "Teacher2",
-                        image: "https://res.cloudinary.com/mkrakib/image/upload/v1656415010/JKKNIU_Images/avatar_ynikah.jpg",
+                        image: avatar,
                 },
                 {
                         teacher: "Teacher 3",
                         shortForm: "Teacher3",
-                        image: "https://res.cloudinary.com/mkrakib/image/upload/v1656415010/JKKNIU_Images/avatar_ynikah.jpg",
+                        image: avatar,
                 },
                 {
                         teacher: "Teacher 4",
                         shortForm: "Teacher4",
-                        image: "https://res.cloudinary.com/mkrakib/image/upload/v1656415010/JKKNIU_Images/avatar_ynikah.jpg",
+                        image: avatar,
                 },
                 {
                         teacher: "Teacher 5",
                         shortForm: "Teacher5",
-                        image: "https://res.cloudinary.com/mkrakib/image/upload/v1656415010/JKKNIU_Images/avatar_ynikah.jpg",
+                        image: avatar,
                 },
                 {
                         teacher: "Teacher 6",
                         shortForm: "Teacher6",
-                        image: "https://res.cloudinary.com/mkrakib/image/upload/v1656415010/JKKNIU_Images/avatar_ynikah.jpg",
+                        image: avatar,
                 },
                 {
                         teacher: "Teacher 7",
                         shortForm: "Teacher7",
-                        image: "https://res.cloudinary.com/mkrakib/image/upload/v1656415010/JKKNIU_Images/avatar_ynikah.jpg",
+                        image: avatar,
                 },
                 {
                         teacher: "Teacher 8",
                         shortForm: "Teacher8",
-                        image: "https://res.cloudinary.com/mkrakib/image/upload/v1656415010/JKKNIU_Images/avatar_ynikah.jpg",
+                        image: avatar,
                 },
                 {
                         teacher: "Teacher 9",
                         shortForm: "Teacher9",
-                        image: "https://res.cloudinary.com/mkrakib/image/upload/v1656415010/JKKNIU_Images/avatar_ynikah.jpg",
+                        image: avatar,
                 },
         ].map((teacher, index) => (
                 <Col xs={12} sm={6} md={4} lg={4} key={index + teacher}>

@@ -16,12 +16,12 @@ const ControlledTab = () => {
                                 {/* <Tab eventKey="home" title="Home">
                                         <h2>Ami</h2>
                                 </Tab> */}
-                                <Tab
+                                {/* <Tab
                                         eventKey="deptHead"
                                         title="Message from Department Head"
                                 >
                                         <h2> Message from Department Head</h2>
-                                </Tab>
+                                </Tab> */}
                                 <Tab eventKey="notice" title="Notice Board">
                                         <h2>Notice Board</h2>
                                 </Tab>

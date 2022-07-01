@@ -1,24 +1,28 @@
 import React from "react";
 import { Container, Row, Col, Card, Button } from "react-bootstrap";
+import event01 from "../../images/events/event01.jpg";
+import event02 from "../../images/events/event02.jpg";
+import event03 from "../../images/events/event03.jpg";
+import event04 from "../../images/events/event04.jpg";
 import "./LEvents.css";
 
 const LatestEvents = () => {
         const displayLatestEvents = [
                 {
                         events: "First International Conference on Humanities and Social Sciences, 14-15 June 2022",
-                        image: "https://jkkniu.edu.bd/wp-content/uploads/Banner-Keynote-Speakers-First-InternationalConference-2022-JKKNIU.jpg",
+                        image: event01,
                 },
                 {
                         events: "শহীদ বুদ্ধিজীবি দিবস পালিত",
-                        image: "https://jkkniu.edu.bd/wp-content/uploads/IMG_5857-scaled.jpg",
+                        image: event02,
                 },
                 {
                         events: "ত্রিশাল মুক্ত দিবস পালিত",
-                        image: "https://jkkniu.edu.bd/wp-content/uploads/IMG_5083-scaled.jpg",
+                        image: event03,
                 },
                 {
                         events: "চলমান মুজিববর্ষ এবং স্বাধীনতার সুবর্ণজয়ন্তী উদযাপন উপলক্ষ্যে মাসব্যাপী অনুষ্ঠানমালা",
-                        image: "https://jkkniu.edu.bd/wp-content/uploads/261746853_332401974973280_9022559356421836173_n.jpg",
+                        image: event04,
                 },
         ].map((course, index) => (
                 <Col

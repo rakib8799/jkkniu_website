@@ -1,6 +1,6 @@
 import React from "react";
 import { Col, Card } from "react-bootstrap";
-// import course01 from "../../images/course01.jpeg";
+import course01 from "../../images/course01.jpg";
 import "../../container/courses/courses.css";
 import "../../container/about/about.css";
 import { Link } from "react-router-dom";
@@ -22,7 +22,7 @@ const DataDept = ({ dept }) => {
                                         <div className="img-container">
                                                 <Card.Img
                                                         variant="top"
-                                                        src="https://res.cloudinary.com/mkrakib/image/upload/v1656415008/JKKNIU_Images/course01_wqyi2l.jpg"
+                                                        src={course01}
                                                         className="course-img"
                                                 />
                                                 <span className="course-item-icon">

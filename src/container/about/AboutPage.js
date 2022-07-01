@@ -1,6 +1,6 @@
 import React from "react";
 import { Container, Row, Col, Image } from "react-bootstrap";
-// import aboutPic from "../../images/course01.jpeg";
+import aboutPic from "../../images/about.jpg";
 
 const AboutPage = () => {
         return (
@@ -188,7 +188,7 @@ const AboutPage = () => {
                                         >
                                                 <div className="about-img_container">
                                                         <Image
-                                                                src="https://res.cloudinary.com/mkrakib/image/upload/v1656415016/JKKNIU_Images/clogo_yomujv.png"
+                                                                src={aboutPic}
                                                                 fluid
                                                                 style={{
                                                                         border: "1px solid brown",

@@ -1,6 +1,6 @@
 import React from "react";
 import { Container, Row, Col, Button } from "react-bootstrap";
-// import course01 from "../../images/course01.jpeg";
+import course01 from "../../images/course01.jpg";
 import "../../container/courses/courses.css";
 import "../../container/about/about.css";
 import { useParams } from "react-router-dom";
@@ -29,13 +29,13 @@ const Department = () => {
                                 "Film",
                                 "Philosophy",
                         ],
-                        // image: course01,
+                        image: course01,
                 },
                 {
                         faculty: "FACFINEARTS",
                         departments: ["Fine Arts"],
                         shortForm: ["Fine_Arts"],
-                        // image: course01,
+                        image: course01,
                 },
                 {
                         faculty: "FACSCI",
@@ -46,7 +46,7 @@ const Department = () => {
                                 "Statistics",
                         ],
                         shortForm: ["CSE", "EEE", "ESE", "STAT"],
-                        // image: course01,
+                        image: course01,
                 },
                 {
                         faculty: "FACSOCIALSCI",
@@ -68,13 +68,13 @@ const Department = () => {
                                 "LGUD",
                                 "Sociology",
                         ],
-                        // image: course01,
+                        image: course01,
                 },
                 {
                         faculty: "FACLAW",
                         departments: ["Law and Justice"],
                         shortForm: ["Law"],
-                        // image: course01,
+                        image: course01,
                 },
                 {
                         faculty: "FACBUSINESS",
@@ -85,7 +85,7 @@ const Department = () => {
                                 "Management",
                         ],
                         shortForm: ["AIS", "Finance", "HRM", "Management"],
-                        // image: course01,
+                        image: course01,
                 },
         ];
 

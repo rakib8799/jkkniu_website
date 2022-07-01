@@ -2,6 +2,13 @@
 import React from "react";
 import { Button, Card, Col, Container, Row } from "react-bootstrap";
 import LatestEvents from "./LatestEvents";
+import news01 from "../../images/news/news01.jpg";
+import news02 from "../../images/news/news02.jpg";
+import news03 from "../../images/news/news03.jpg";
+import news04 from "../../images/news/news04.jpg";
+import news05 from "../../images/news/news05.jpg";
+import news06 from "../../images/news/news06.jpg";
+
 import "./message.css";
 // import "../courses/courses.css";
 
@@ -13,27 +20,27 @@ const Message = () => {
         const displayMessageCard = [
                 {
                         newsTitle: "First International Conference on Humanities and Social Sciences, 14-15 June 2022",
-                        image: "https://jkkniu.edu.bd/wp-content/uploads/Banner-Keynote-Speakers-First-InternationalConference-2022-JKKNIU.jpg",
+                        image: news01,
                 },
                 {
                         newsTitle: "জাতীয় কবি কাজী নজরুল ইসলাম বিশ্ববিদ্যালয়উপাচার্য পদে প্রফেসর ড. সৌমিত্র শেখর দে’র যোগদান...",
-                        image: "https://jkkniu.edu.bd/wp-content/uploads/Final-PP.jpg",
+                        image: news02,
                 },
                 {
                         newsTitle: "শহীদ বুদ্ধিজীবি দিবস পালিত",
-                        image: "https://jkkniu.edu.bd/wp-content/uploads/IMG_5857-scaled.jpg",
+                        image: news03,
                 },
                 {
                         newsTitle: "শহীদ বুদ্ধিজীবি দিবস-2021",
-                        image: "https://jkkniu.edu.bd/wp-content/uploads/111-1.jpg",
+                        image: news04,
                 },
                 {
                         newsTitle: "ত্রিশাল মুক্ত দিবস পালিত",
-                        image: "https://jkkniu.edu.bd/wp-content/uploads/IMG_5083-scaled.jpg",
+                        image: news05,
                 },
                 {
                         newsTitle: "চলমান মুজিববর্ষ এবং স্বাধীনতার সুবর্ণজয়ন্তী উদযাপন উপলক্ষ্যে মাসব্যাপী অনুষ্ঠানমালা",
-                        image: "https://jkkniu.edu.bd/wp-content/uploads/261746853_332401974973280_9022559356421836173_n.jpg",
+                        image: news06,
                 },
         ].map((news, index) => (
                 <Col

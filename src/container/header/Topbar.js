@@ -33,14 +33,14 @@ const Topbar = () => {
                         </Link>
                         <Navbar.Toggle aria-controls="basic-navbar-nav" />
                         <Navbar.Collapse id="basic-navbar-nav">
-                                <Nav className="mx-4">
+                                <Nav className="mx-4 parent">
                                         {/* <Link to="/">
                                                 <Nav.Link href="#home">
                                                         Home
                                                 </Nav.Link>
                                         </Link> */}
 
-                                        <Link to="/about">
+                                        <Link to="/about" className="children">
                                                 <Nav.Link
                                                         href="/about"
                                                         className="text-uppercase"

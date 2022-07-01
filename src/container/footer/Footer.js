@@ -2,7 +2,7 @@ import React from "react";
 import { Container, Row, Col, Image, Nav } from "react-bootstrap";
 import { Link } from "react-router-dom";
 import ScrollToTop from "react-scroll-to-top";
-// import college from "../../images/clogo.png";
+import footerPic from "../../images/footer.jpg";
 import "./footer.css";
 // import MapContainer from "./MapContainer";
 
@@ -27,7 +27,7 @@ const Footer = () => {
                                                 className="mx-auto  d-flex justify-content-start align-items-center flex-column flex-wrap mt-3"
                                         >
                                                 <Image
-                                                        src="https://res.cloudinary.com/mkrakib/image/upload/v1656415016/JKKNIU_Images/clogo_yomujv.png"
+                                                        src={footerPic}
                                                         fluid
                                                         // style={{
                                                         //         width: "20vw",
