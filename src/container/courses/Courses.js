@@ -1,6 +1,6 @@
 import React from "react";
 import { Container, Row, Col, Card, Button } from "react-bootstrap";
-// import course01 from "../../images/course01.jpeg";
+import course01 from "../../images/course01.jpg";
 import "./courses.css";
 
 const Courses = () => {
@@ -22,7 +22,7 @@ const Courses = () => {
                                 <div className="img-container">
                                         <Card.Img
                                                 variant="top"
-                                                src="https://res.cloudinary.com/mkrakib/image/upload/v1656415008/JKKNIU_Images/course01_wqyi2l.jpg"
+                                                src={course01}
                                                 className="course-img"
                                         />
                                         <span className="course-item-icon">

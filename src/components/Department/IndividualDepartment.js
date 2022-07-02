@@ -122,9 +122,9 @@ const IndividualDepartment = () => {
                                                 xs={10}
                                                 sm={6}
                                                 lg={7}
-                                                className="mx-auto text-center course-title"
+                                                className="mx-auto text-center course-title text-dark"
                                         >
-                                                <h2 className="text-capitalize text-dark text-center">
+                                                <h2 className="text-capitalize text-center">
                                                         {/* Our Featured{" "} */}
                                                         <strong
                                                                 style={{
@@ -186,7 +186,61 @@ const IndividualDepartment = () => {
                                                                                 "2rem",
                                                                 }}
                                                         >
-                                                                <p
+                                                                <h6>
+                                                                        Duration
+                                                                </h6>
+                                                                <strong
+                                                                        style={{
+                                                                                color: "brown",
+                                                                        }}
+                                                                >
+                                                                        <p>
+                                                                                M.Sc.
+                                                                                -
+                                                                                3
+                                                                                Semesters
+                                                                        </p>
+                                                                        <p>
+                                                                                B.Sc.
+                                                                                -
+                                                                                8
+                                                                                Semesters
+                                                                        </p>
+                                                                </strong>
+                                                        </div>
+                                                        <div
+                                                                style={{
+                                                                        marginRight:
+                                                                                "2rem",
+                                                                }}
+                                                        >
+                                                                <h6>Credits</h6>
+                                                                <strong
+                                                                        style={{
+                                                                                color: "brown",
+                                                                        }}
+                                                                >
+                                                                        <p>
+                                                                                M.Sc.-36
+                                                                        </p>
+                                                                        <p>
+                                                                                B.Sc.-162
+                                                                        </p>
+                                                                </strong>
+                                                        </div>
+                                                        <div>
+                                                                <Button
+                                                                        className="btn btn-main ml-5"
+                                                                        style={{
+                                                                                margin: "20px 0",
+                                                                        }}
+                                                                >
+                                                                        Download
+                                                                        Syllabus
+                                                                </Button>
+                                                        </div>
+
+                                                        {/* <p
                                                                         className="text-muted"
                                                                         data-aos="fade-up"
                                                                 >
@@ -208,29 +262,12 @@ const IndividualDepartment = () => {
                                                                 >
                                                                         Total
                                                                         Staffs 4
-                                                                </p>
-                                                        </div>
-                                                        <div>
-                                                                <p
-                                                                        className="text-muted"
-                                                                        data-aos="fade-up"
-                                                                >
-                                                                        Department
-                                                                </p>
-                                                                <p
-                                                                        className="text-muted"
-                                                                        data-aos="fade-up"
-                                                                >
-                                                                        Duration
-                                                                </p>
-                                                                <p
-                                                                        className="text-muted"
-                                                                        data-aos="fade-up"
-                                                                >
-                                                                        Credits
-                                                                </p>
-                                                        </div>
-                                                        <div>
+                                                                </p> */}
+                                                        {/* <div> */}
+
+                                                        {/* </div> */}
+                                                        {/* </div> */}
+                                                        {/* <div>
                                                                 <Button
                                                                         className="btn btn-main ml-5"
                                                                         style={{
@@ -240,6 +277,61 @@ const IndividualDepartment = () => {
                                                                         Download
                                                                         Syllabus
                                                                 </Button>
+                                                        </div> */}
+                                                </div>
+                                                <div className="d-flex mt-5">
+                                                        <div
+                                                                style={{
+                                                                        marginRight:
+                                                                                "2rem",
+                                                                }}
+                                                        >
+                                                                <h6>
+                                                                        Total
+                                                                        Students
+                                                                </h6>
+                                                                <strong
+                                                                        style={{
+                                                                                color: "brown",
+                                                                        }}
+                                                                >
+                                                                        <p>
+                                                                                300
+                                                                        </p>
+                                                                </strong>
+                                                        </div>
+                                                        <div
+                                                                style={{
+                                                                        marginRight:
+                                                                                "2rem",
+                                                                }}
+                                                        >
+                                                                <h6>
+                                                                        Total
+                                                                        Teachers
+                                                                </h6>
+                                                                <strong
+                                                                        style={{
+                                                                                color: "brown",
+                                                                        }}
+                                                                >
+                                                                        <p>
+                                                                                15
+                                                                        </p>
+                                                                </strong>
+                                                        </div>
+                                                        <div>
+                                                                <h6>
+                                                                        Total
+                                                                        Staffs
+                                                                </h6>
+                                                                <strong
+                                                                        style={{
+                                                                                color: "brown",
+                                                                        }}
+                                                                >
+                                                                        <p>7</p>
+                                                                </strong>
                                                         </div>
                                                 </div>
                                         </Col>

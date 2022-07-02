@@ -1,5 +1,5 @@
 .nav-link {
-        padding: 0 0.5rem !important;
+        padding: 0 0.4rem !important;
         text-decoration: none !important;
 }
 
@@ -46,6 +46,13 @@ a:hover {
 }
 
 @media (max-width: 550px) {
+        /* .logoText {
+                display: none;
+        } */
+        .toggle {
+                /* border: 5px solid red; */
+                margin: auto;
+        }
         .carousel-caption {
                 width: 80%;
         }

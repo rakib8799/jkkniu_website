@@ -1,6 +1,6 @@
 import React from "react";
 import { Navbar, Nav, NavDropdown } from "react-bootstrap";
-// import logo from "../../images/logo.png";
+import logo from "../../images/logo.jpg";
 import "./header.css";
 import { Link } from "react-router-dom";
 
@@ -13,7 +13,7 @@ const Topbar = () => {
         return (
                 <Navbar
                         expand="lg"
-                        className="px-2 font-weight-bold"
+                        className="font-weight-bold"
                         style={{
                                 background: "linear-gradient(to right,#137e60,#4dddb4)",
                         }}
@@ -21,19 +21,26 @@ const Topbar = () => {
                         <Link to="/">
                                 <Navbar.Brand href="/">
                                         <img
-                                                src="https://res.cloudinary.com/mkrakib/image/upload/v1656415010/JKKNIU_Images/logo_up1skz.png"
+                                                src={logo}
                                                 alt="logo"
-                                                style={{ width: "3.6vw" }}
+                                                style={{ width: "50px" }}
                                         />
-                                        <span className="text-white">
+                                        <span
+                                                className="text-white logoText"
+                                                style={{ fontSize: "16px" }}
+                                        >
                                                 {" "}
-                                                Nazrul University
+                                                Jatiya Kabi Kazi Nazrul Islam
+                                                University
                                         </span>
                                 </Navbar.Brand>
                         </Link>
-                        <Navbar.Toggle aria-controls="basic-navbar-nav" />
+                        <Navbar.Toggle
+                                aria-controls="basic-navbar-nav"
+                                className="toggle"
+                        />
                         <Navbar.Collapse id="basic-navbar-nav">
-                                <Nav className="mx-4 parent">
+                                <Nav className="ml-2 parent">
                                         {/* <Link to="/">
                                                 <Nav.Link href="#home">
                                                         Home

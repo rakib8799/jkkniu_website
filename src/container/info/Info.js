@@ -15,8 +15,8 @@ const Info = () => {
                                 <Row>
                                         <Col
                                                 xs={10}
-                                                lg={4}
                                                 md={6}
+                                                lg={4}
                                                 className="mx-auto my-5 align-self-center"
                                                 data-aos="fade-in"
                                         >
