@@ -19,7 +19,7 @@ const Topbar = () => {
                         }}
                 >
                         <Link to="/">
-                                <Navbar.Brand href="/">
+                                <Navbar.Brand href="#home">
                                         <img
                                                 src={logo}
                                                 alt="logo"
@@ -47,9 +47,9 @@ const Topbar = () => {
                                                 </Nav.Link>
                                         </Link> */}
 
-                                        <Link to="/about" className="children">
+                                        <Link to="/about">
                                                 <Nav.Link
-                                                        href="/about"
+                                                        href="#about"
                                                         className="text-uppercase"
                                                         id="about-link"
                                                 >
