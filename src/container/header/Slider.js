@@ -1,8 +1,10 @@
 import React from "react";
 import { Container, Row, Col, Carousel, Image } from "react-bootstrap";
+import slide00 from "../../images/slide-00.jpg";
 import slide01 from "../../images/slide-01.jpg";
 import slide02 from "../../images/slide-02.jpg";
-import slide03 from "../../images/slide-03.jpg";
+import slide04 from "../../images/slide04.jpg";
+// import slide03 from "../../images/slide-03.jpg";
 import "./header.css";
 
 const Slider = () => {
@@ -23,6 +25,20 @@ const Slider = () => {
                                                                         height: "auto",
                                                                 }}
                                                         />
+                                                </Carousel.Item>
+                                                <Carousel.Item>
+                                                        <Image
+                                                                // className="d-block w-100"
+                                                                src={slide04}
+                                                                alt="Second slide"
+                                                                // fluid
+                                                                style={{
+                                                                        // objectFit: "cover",
+                                                                        maxWidth: "100%",
+                                                                        height: "auto",
+                                                                }}
+                                                        />
+
                                                         {/* <Carousel.Caption
                                                                         className="text-left"
                                                                         data-aos="fade-down"
@@ -96,9 +112,19 @@ const Slider = () => {
                                                 </Carousel.Item>
                                                 <Carousel.Item>
                                                         <Image
+                                                                src={slide00}
+                                                                alt="Third slide"
+                                                                style={{
+                                                                        maxWidth: "100%",
+                                                                        height: "auto",
+                                                                }}
+                                                        />
+                                                </Carousel.Item>
+                                                <Carousel.Item>
+                                                        <Image
                                                                 // className="d-block w-100"
                                                                 src={slide02}
-                                                                alt="Second slide"
+                                                                alt="Fourth slide"
                                                                 // fluid
                                                                 style={{
                                                                         // objectFit: "cover",
@@ -125,48 +151,6 @@ const Slider = () => {
                                                                                 consectetur
                                                                                 adipiscing
                                                                                 elit.
-                                                                        </p>
-                                                                        <Button
-                                                                                variant="danger"
-                                                                                style={{
-                                                                                        marginBottom: 10,
-                                                                                }}
-                                                                        >
-                                                                                Now
-                                                                        </Button>
-                                                                </Carousel.Caption> */}
-                                                </Carousel.Item>
-                                                <Carousel.Item>
-                                                        <Image
-                                                                // className="d-block w-100"
-                                                                src={slide03}
-                                                                alt="Third slide"
-                                                                // fluid
-                                                                style={{
-                                                                        // objectFit: "cover",
-                                                                        maxWidth: "100%",
-                                                                        height: "auto",
-                                                                }}
-                                                        />
-
-                                                        {/* <Carousel.Caption
-                                                                        data-aos="fade-right"
-                                                                        className="text-left"
-                                                                >
-                                                                        <h1>
-                                                                                Third
-                                                                                slide
-                                                                                label
-                                                                        </h1>
-                                                                        <p>
-                                                                                Praesent
-                                                                                commodo
-                                                                                cursus
-                                                                                magna,
-                                                                                vel
-                                                                                scelerisque
-                                                                                nisl
-                                                                                consectetur.
                                                                         </p>
                                                                         <Button
                                                                                 variant="danger"

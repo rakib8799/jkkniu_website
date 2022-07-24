@@ -89,7 +89,7 @@ const Info = () => {
                                                         society.
                                                 </p>
                                                 <Link
-                                                        to="/about"
+                                                        to="/vc_sir/message"
                                                         className="btn btn-main text-uppercase learn-more text-white"
                                                         data-aos="fade-right"
                                                 >

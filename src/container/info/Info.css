@@ -1,6 +1,15 @@
+.banner-title {
+        color: brown;
+        font-size: 3rem;
+}
 @media (max-width: 770px) {
         .about-text {
                 width: 100% !important;
+        }
+}
+@media (max-width: 576px) {
+        .banner-title {
+                font-size: 2.5rem;
         }
 }
 
@@ -9,11 +18,6 @@
         display: flex;
         justify-content: center;
         align-items: center;
-}
-
-.banner-title {
-        color: brown;
-        font-size: 3rem;
 }
 
 .aboutpage {

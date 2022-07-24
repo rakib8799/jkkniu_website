@@ -6,9 +6,12 @@ import "./video.css";
 
 const VideoPage = () => {
         return (
-                <section style={{ background: "#fff" }}>
-                        <Container fluid className="video-container">
-                                <Row>
+                <section
+                        style={{ background: "#fff" }}
+                        className="d-flex justify-content-center"
+                >
+                        <Container className="video-container">
+                                <Row className="">
                                         <Col className="mx-auto mt-5 mb-3 text-center text-capitalize">
                                                 <h1>
                                                         Our{" "}

@@ -16,12 +16,12 @@ class PhotoGallery extends Component {
         render() {
                 return (
                         <section
-                                id="gallary"
+                                // id="gallary"
                                 style={{ backgroundColor: "#fff" }}
                         >
-                                <Container fluid className="message-container">
+                                <Container className="message-container">
                                         <Row>
-                                                <Col className="mx-auto mt-5 mb-3 text-center text-capitalize">
+                                                <Col className="mx-auto mb-3 text-center text-capitalize">
                                                         <h1>
                                                                 University{" "}
                                                                 <strong
@@ -36,6 +36,7 @@ class PhotoGallery extends Component {
                                         </Row>
                                         <Gallery
                                                 images={this.state.imageData}
+                                                style={{ minWidth: "20vw" }}
                                         />
                                         {/* <div className="text-center">
                                                 <Button

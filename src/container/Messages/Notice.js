@@ -1,6 +1,7 @@
 /* eslint-disable jsx-a11y/no-distracting-elements */
 import React from "react";
 import { Button, Card, Col, Container, Row } from "react-bootstrap";
+import { Link } from "react-router-dom";
 // import course01 from "../../images/course01.jpeg";
 // import "./message.css";
 // import "../courses/courses.css";
@@ -26,12 +27,12 @@ const Notice = () => {
                 {
                         notices: "MDS Admission Notice for Summer 2022",
                 },
-                {
-                        notices: "২০২০-২১ শিক্ষাবর্ষে মাস্টার্স অব সায়েন্স এ নিয়মিত প্রোগ্রামে ভর্তির বিজ্ঞপ্তি",
-                },
-                {
-                        notices: "শহীদ দিবস ও আন্তর্জাতিক মাতৃভাষা দিবস উদযাপন সংক্রান্ত বিজ্ঞপ্তি",
-                },
+                // {
+                //         notices: "২০২০-২১ শিক্ষাবর্ষে মাস্টার্স অব সায়েন্স এ নিয়মিত প্রোগ্রামে ভর্তির বিজ্ঞপ্তি",
+                // },
+                // {
+                //         notices: "শহীদ দিবস ও আন্তর্জাতিক মাতৃভাষা দিবস উদযাপন সংক্রান্ত বিজ্ঞপ্তি",
+                // },
         ].map((course, index) => (
                 <Col
                         xs={10}
@@ -42,7 +43,7 @@ const Notice = () => {
                         data-aos="fade-up"
                 >
                         <Card
-                                className="course-card"
+                                className="notice-card"
                                 style={{ height: "30vh" }}
                         >
                                 {/* <div className="img-container">
@@ -57,18 +58,36 @@ const Notice = () => {
                                         </div> */}
                                 <Card.Body>
                                         <Card.Title>
-                                                {course.notices}
+                                                <Link
+                                                        to="/notice"
+                                                        className="text-dark"
+                                                >
+                                                        {course?.notices
+                                                                .length < 45
+                                                                ? course.notices
+                                                                : course?.notices.slice(
+                                                                          0,
+                                                                          44
+                                                                  ) + "..."}
+                                                </Link>
                                         </Card.Title>
                                         <Card.Text>
                                                 Published: 2022-06-06
                                         </Card.Text>
                                         <div className="">
-                                                <Button
-                                                        className="btn btn-optional position-absolute mb-3"
-                                                        style={{ bottom: "0" }}
-                                                >
-                                                        View Notice
-                                                </Button>
+                                                <Link to="/notice">
+                                                        <Button
+                                                                className="btn btn-optional position-absolute mb-3"
+                                                                style={{
+                                                                        bottom: "0",
+                                                                        top: "72%",
+                                                                        right: "28%",
+                                                                        left: "28%",
+                                                                }}
+                                                        >
+                                                                View Notice
+                                                        </Button>
+                                                </Link>
                                         </div>
                                 </Card.Body>
                         </Card>
@@ -76,11 +95,12 @@ const Notice = () => {
         ));
 
         return (
-                <section style={{ background: "#fff" }} className="pt-5">
-                        <Container
-                                fluid
-                                // className="message-container my-3"
-                        >
+                <section
+                        className="py-5"
+                        id=""
+                        style={{ backgroundColor: "#ffffff" }}
+                >
+                        <Container className="message-container my-3">
                                 <Row>
                                         <Col className="mx-auto my-3 text-center text-capitalize">
                                                 <h1>
@@ -95,7 +115,7 @@ const Notice = () => {
                                                 </h1>
                                         </Col>
                                 </Row>
-                                <Row className="mx-3 main-row">
+                                <Row className="main-row">
                                         {displayMessageCard}
                                 </Row>
                                 <Row>

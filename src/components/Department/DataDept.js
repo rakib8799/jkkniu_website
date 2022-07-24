@@ -16,7 +16,7 @@ const DataDept = ({ dept }) => {
                                 data-aos="fade-up"
                         >
                                 <Card
-                                        className="course-card"
+                                        className="department-card"
                                         style={{ height: "70vh" }}
                                 >
                                         <div className="img-container">
@@ -44,6 +44,9 @@ const DataDept = ({ dept }) => {
                                                                 className="btn btn-optional position-absolute mb-3 text-white"
                                                                 style={{
                                                                         bottom: "0",
+                                                                        top: "88%",
+                                                                        right: "33%",
+                                                                        left: "33%",
                                                                 }}
                                                         >
                                                                 See Details

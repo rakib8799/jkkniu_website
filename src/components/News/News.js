@@ -1,10 +1,10 @@
 import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import { Link } from "react-router-dom";
-import "./event.css";
 import varsity_image from "../../images/about.jpg";
+import "./News.css";
 
-const Event = () => {
+const News = () => {
         const displayEvent = ["event01", "event02", "event03"].map(
                 (item, index) => (
                         <Col xs={12} key={index + item} className="mt-5">
@@ -91,7 +91,7 @@ const Event = () => {
                         >
                                 <Row>
                                         <Col>
-                                                <h1>Events</h1>
+                                                <h1>News</h1>
                                                 <p>
                                                         Home /{" "}
                                                         <span
@@ -99,7 +99,7 @@ const Event = () => {
                                                                         color: "brown",
                                                                 }}
                                                         >
-                                                                Events
+                                                                News
                                                         </span>
                                                 </p>
                                         </Col>
@@ -112,4 +112,4 @@ const Event = () => {
         );
 };
 
-export default Event;
+export default News;

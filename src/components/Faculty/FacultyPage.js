@@ -47,7 +47,7 @@ const FacultyPage = () => {
                         data-aos="fade-up"
                 >
                         <Card
-                                className="course-card"
+                                className="faculty-card"
                                 style={{ height: "70vh" }}
                         >
                                 <div className="img-container">
@@ -74,7 +74,12 @@ const FacultyPage = () => {
                                                 <Link
                                                         to={`/faculty/${faculty.shortForm}`}
                                                         className="btn btn-optional position-absolute mb-3 text-white"
-                                                        style={{ bottom: "0" }}
+                                                        style={{
+                                                                bottom: "0",
+                                                                top: "88%",
+                                                                right: "33%",
+                                                                left: "33%",
+                                                        }}
                                                 >
                                                         See Details
                                                 </Link>

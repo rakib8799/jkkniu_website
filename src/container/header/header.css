@@ -1,5 +1,7 @@
+/* @import url("https://fonts.googleapis.com/css2?family=Petit+Formal+Script&display=swap"); */
+
 .nav-link {
-        padding: 0 0.4rem !important;
+        padding: 0 0.5rem !important;
         text-decoration: none !important;
 }
 
@@ -14,11 +16,50 @@ a:hover {
 .header-styles {
         height: 100vh;
 }
+.largeText {
+        font-size: 1.8rem;
+        font-weight: 600;
+        /* margin: auto; */
+        /* display: flex;
+        justify-content: center; */
+        /* font-family: "Petit Formal Script", cursive; */
+}
+.btn-menu {
+        display: block;
+}
+.logo {
+        width: 80px;
+}
 
 @media (max-width: 575px) {
         .enroll-btn {
                 margin-top: 1rem;
         }
+        .largeText {
+                font-size: 0.9rem;
+                font-weight: 700;
+                /* margin-left: 6px; */
+                /* text-align: center; */
+                padding-top: 10px;
+                /* padding-left: 6.2px; */
+        }
+        .btn-menu {
+                display: none;
+        }
+        .logo {
+                width: 40px;
+                /* margin-left: 2px; */
+                /* margin: 0 5px; */
+                /* display: none; */
+                /* align-items: flex-start; */
+                /* position: fixed; */
+                /* padding-right: 20px; */
+                /* margin-left: 20px; */
+        }
+        /* .nav-link {
+                position: absolute;
+                left: 0;
+        } */
 }
 
 .div-col {
@@ -38,6 +79,23 @@ a:hover {
         right: 35%;
         top: 35%;
 }
+/* @media (max-width: 1920px) {
+        .largeText {
+                font-size: 2rem;
+        }
+} */
+@media (max-width: 1024px) {
+        .btn-menu {
+                /* display: none; */
+                margin-bottom: 3rem;
+        }
+        .btn-1 {
+                margin-bottom: 0.3rem;
+        }
+        /* .nav-link {
+                padding-top: 5rem;
+        } */
+}
 
 @media (max-width: 750px) {
         .carousel-caption {
@@ -49,10 +107,9 @@ a:hover {
         /* .logoText {
                 display: none;
         } */
-        .toggle {
-                /* border: 5px solid red; */
+        /* .toggle {
                 margin: auto;
-        }
+        } */
         .carousel-caption {
                 width: 80%;
         }
@@ -62,7 +119,7 @@ a:hover {
 }
 
 .dropdown-menu {
-        background-color: #4bdab1;
+        background-color: #ffffff;
 }
 /* #academic-dropdown,
 #administration-dropdown,
@@ -84,6 +141,7 @@ a:hover {
 } */
 .navbar-light .navbar-nav .nav-link {
         color: rgba(255, 255, 255, 0.85);
+        font-weight: 500;
 }
 .navbar-light .navbar-nav .active > .nav-link,
 .navbar-light .navbar-nav .nav-link.active,

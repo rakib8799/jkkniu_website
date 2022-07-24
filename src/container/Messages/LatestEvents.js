@@ -1,10 +1,12 @@
 import React from "react";
 import { Container, Row, Col, Card, Button } from "react-bootstrap";
+import { Link } from "react-router-dom";
 import event01 from "../../images/events/event01.jpg";
 import event02 from "../../images/events/event02.jpg";
 import event03 from "../../images/events/event03.jpg";
 import event04 from "../../images/events/event04.jpg";
 import "./LEvents.css";
+import "./message.css";
 
 const LatestEvents = () => {
         const displayLatestEvents = [
@@ -35,7 +37,10 @@ const LatestEvents = () => {
                 >
                         <Card
                                 className="course-card"
-                                style={{ height: "65vh" }}
+                                style={{
+                                        height: "60vh",
+                                        // background: "#444444",
+                                }}
                         >
                                 <div className="img-container">
                                         <Card.Img
@@ -51,7 +56,21 @@ const LatestEvents = () => {
                                         </span>
                                 </div>
                                 <Card.Body>
-                                        <Card.Title>{course.events}</Card.Title>
+                                        <Card.Title>
+                                                <Link
+                                                        to="/events"
+                                                        className="text-dark"
+                                                >
+                                                        {/* {course.events} */}
+                                                        {course?.events.length <
+                                                        57
+                                                                ? course.events
+                                                                : course?.events.slice(
+                                                                          0,
+                                                                          56
+                                                                  ) + "..."}
+                                                </Link>
+                                        </Card.Title>
                                         {/* <Card.Text>
                                                         Some quick example text
                                                         to build on the card
@@ -60,12 +79,19 @@ const LatestEvents = () => {
                                                         content.
                                                 </Card.Text> */}
                                         <div className="">
-                                                <Button
-                                                        className="btn btn-optional position-absolute mb-3"
-                                                        style={{ bottom: "0" }}
-                                                >
-                                                        View Details Events
-                                                </Button>
+                                                <Link to="/events">
+                                                        <Button
+                                                                className="btn btn-optional position-absolute mb-3"
+                                                                style={{
+                                                                        bottom: "0",
+                                                                        top: "85%",
+                                                                        right: "30%",
+                                                                        left: "30%",
+                                                                }}
+                                                        >
+                                                                View Event
+                                                        </Button>
+                                                </Link>
                                         </div>
                                 </Card.Body>
                         </Card>
@@ -73,35 +99,41 @@ const LatestEvents = () => {
         ));
 
         return (
-                <Container>
-                        <Row>
-                                <Col className="mx-auto mt-5 text-capitalize text-center mb-3">
-                                        <h1>
-                                                Latest{" "}
-                                                <strong
+                <section
+                        className="about py-5"
+                        id="about"
+                        style={{ backgroundColor: "#ffffff" }}
+                >
+                        <Container>
+                                <Row>
+                                        <Col className="mx-auto mt-5 text-capitalize text-center mb-3">
+                                                <h1>
+                                                        Latest{" "}
+                                                        <strong
+                                                                style={{
+                                                                        color: "brown",
+                                                                }}
+                                                        >
+                                                                Events
+                                                        </strong>
+                                                </h1>
+                                        </Col>
+                                </Row>
+                                <Row>{displayLatestEvents}</Row>
+                                <Row>
+                                        <Col className="mx-auto text-center">
+                                                <Button
+                                                        className="btn btn-main"
                                                         style={{
-                                                                color: "brown",
+                                                                margin: "20px 0",
                                                         }}
                                                 >
-                                                        Events
-                                                </strong>
-                                        </h1>
-                                </Col>
-                        </Row>
-                        <Row>{displayLatestEvents}</Row>
-                        <Row>
-                                <Col className="mx-auto text-center">
-                                        <Button
-                                                className="btn btn-main"
-                                                style={{
-                                                        margin: "20px 0",
-                                                }}
-                                        >
-                                                View More
-                                        </Button>
-                                </Col>
-                        </Row>
-                </Container>
+                                                        View More
+                                                </Button>
+                                        </Col>
+                                </Row>
+                        </Container>
+                </section>
         );
 };
 
