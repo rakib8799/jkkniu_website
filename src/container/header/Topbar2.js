@@ -16,9 +16,14 @@ export default function Topbar2() {
                 <div
                         className="py-md-2"
                         style={{
+<<<<<<< HEAD
                                 background: "linear-gradient(to right,#025C53,#4dddb4)",
                                 // background: "#025C53",4dddb4
                                 // position: "fixed",
+=======
+                                // background: "linear-gradient(to right,#137e60,#4dddb4)",
+                                background: "#025C53",
+>>>>>>> a311b54ff24b35bad6e48405c12507e22f723a40
                         }}
                 >
                         <div
@@ -365,15 +370,20 @@ export default function Topbar2() {
                                                 </Row>
                                         </Col>
                                         <Col lg={2} md={3} className="btn-menu">
+<<<<<<< HEAD
                                                 {/* <button className="btn btn-main text-white mr-2 btn-sm btn-1"> */}
                                                 <Link
                                                         to="/signup"
                                                         className="btn btn-main text-white mr-2 btn-sm btn-1"
                                                 >
+=======
+                                                <button className="btn btn-main text-white mr-2 btn-sm btn-1">
+>>>>>>> a311b54ff24b35bad6e48405c12507e22f723a40
                                                         <FontAwesomeIcon
                                                                 icon={faUserTie}
                                                         />{" "}
                                                         Student
+<<<<<<< HEAD
                                                 </Link>
                                                 {/* </button> */}
                                                 {/* <button className="btn btn-main text-white btn-sm btn-2"> */}
@@ -381,13 +391,21 @@ export default function Topbar2() {
                                                         to="/login"
                                                         className="btn btn-main text-white btn-sm btn-2"
                                                 >
+=======
+                                                </button>
+                                                <button className="btn btn-main text-white btn-sm btn-2">
+>>>>>>> a311b54ff24b35bad6e48405c12507e22f723a40
                                                         <FontAwesomeIcon
                                                                 icon={faLock}
                                                                 className="pr-1"
                                                         />
                                                         JKKNIU
+<<<<<<< HEAD
                                                 </Link>
                                                 {/* </button> */}
+=======
+                                                </button>
+>>>>>>> a311b54ff24b35bad6e48405c12507e22f723a40
                                         </Col>
                                 </Row>
                                 {/* </Container> */}

@@ -110,12 +110,15 @@ const App = () => {
                                 <Route exact path="/previous-issue">
                                         <PreviousIssue />
                                 </Route>
+<<<<<<< HEAD
                                 <Route exact path="/signup">
                                         <SignUp />
                                 </Route>
                                 <Route exact path="/login">
                                         <Login />
                                 </Route>
+=======
+>>>>>>> a311b54ff24b35bad6e48405c12507e22f723a40
                         </Switch>
                         <Footer />
                 </div>
