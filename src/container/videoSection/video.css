@@ -1,7 +1,9 @@
 video {
-        width: 100vw;
-        height: 550px;
+        /* width: 100vw; */
+        height: 85vh;
         object-fit: fill;
+        /* display: block;
+        margin: auto; */
 }
 
 @media (max-width: 950px) {

@@ -9,10 +9,11 @@ import "./footer.css";
 const Footer = () => {
         return (
                 <footer
-                        className="site-footer"
+                        className="site-footer text-white"
                         id="contact"
                         style={{
-                                background: "linear-gradient(to right,#137e60,#4dddb4)",
+                                // background: "linear-gradient(to right,#137e60,#4dddb4)",
+                                background: "linear-gradient(to right,#025C53,#4dddb4)",
                         }}
                 >
                         <Container fluid>
@@ -34,7 +35,8 @@ const Footer = () => {
                                                         // }}
                                                 />
                                                 <h4 className="mt-3 text-center">
-                                                        Nazrul University
+                                                        Jatiya Kabi Kazi Nazrul
+                                                        University
                                                 </h4>
                                         </Col>
                                         <Col
@@ -49,7 +51,7 @@ const Footer = () => {
                                                 <div
                                                         className="justify-content-start align-items-center flex-column"
                                                         style={{
-                                                                borderTop: "2px solid green",
+                                                                borderTop: "2px solid brown",
                                                                 paddingTop: "0.5rem",
                                                         }}
                                                 >
@@ -98,28 +100,34 @@ const Footer = () => {
 
                                                 <div
                                                         style={{
-                                                                borderTop: "2px solid green",
+                                                                borderTop: "2px solid brown",
                                                                 paddingTop: "0.5rem",
                                                         }}
                                                 >
                                                         <Nav className="mx-auto">
-                                                                <Link to="/">
-                                                                        <Nav.Link to="/notice">
-                                                                                Notice
-                                                                                Board
-                                                                        </Nav.Link>
+                                                                <Link
+                                                                        to="/notice"
+                                                                        className="mr-3 text-white font-weight-bold"
+                                                                >
+                                                                        {/* <Nav.Link to="/notice"> */}
+                                                                        Notice
+                                                                        Board
+                                                                        {/* </Nav.Link> */}
                                                                 </Link>
-                                                                <Link to="/">
-                                                                        <Nav.Link to="/contact">
-                                                                                Contact
-                                                                                Us
-                                                                        </Nav.Link>
+                                                                <Link
+                                                                        to="/contact"
+                                                                        className="text-white font-weight-bold"
+                                                                >
+                                                                        {/* <Nav.Link to="#contact"> */}
+                                                                        Contact
+                                                                        Us
+                                                                        {/* </Nav.Link> */}
                                                                 </Link>
                                                         </Nav>
                                                 </div>
                                         </Col>
                                 </Row>
-                                <hr />
+                                <hr style={{ borderTop: "2px solid brown" }} />
                         </Container>
                         <Container>
                                 <Row>
@@ -128,9 +136,12 @@ const Footer = () => {
                                                         Copyright &copy;
                                                         {new Date().getFullYear()}{" "}
                                                         All Rights Reserved by
-                                                        <Link to="/copyright">
+                                                        <Link
+                                                                to="/copyright"
+                                                                className="text-white font-weight-bold"
+                                                        >
                                                                 {" "}
-                                                                Company
+                                                                MK Rakib
                                                         </Link>
                                                         .
                                                 </p>

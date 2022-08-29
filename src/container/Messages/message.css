@@ -3,8 +3,36 @@
                 margin: 0 !important;
         }
 }
-
-.message-card:hover {
+/* The animation code */
+@keyframes news {
+        from {
+                background: linear-gradient(to right, #000000, #444444),
+                        linear-gradient(to right, #012e76, #467fda);
+                background-clip: content-box, padding-box;
+        }
+        to {
+                background: linear-gradient(to right, #000000, #444444),
+                        linear-gradient(to right, #9c3230, #ff706e);
+                background-clip: content-box, padding-box;
+        }
+}
+/* .course-card {
+        padding: 1rem;
+        background-image: linear-gradient(to right, #000000, #444444),
+                linear-gradient(to right, #137e60, #4dddb4);
+        background-clip: content-box, padding-box;
+}
+.course-card:hover {
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.25),
+                0px 10px 15px rgba(0, 0, 0, 0.35);
+        animation: news 2s ease-in-out 1s infinite alternate both;
+} */
+.course-card:hover,
+.notice-card:hover,
+.journal-card:hover,
+.faculty-card:hover,
+.department-card:hover,
+.individual-card:hover {
         box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.25),
                 0px 10px 15px rgba(0, 0, 0, 0.35);
 }

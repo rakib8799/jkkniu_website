@@ -1,6 +1,6 @@
 import React from "react";
 import { Container, Row, Col, Image } from "react-bootstrap";
-// import aboutPic from "../../images/course01.jpeg";
+import vc_sir from "../../images/vc_sir.jpg";
 
 const InfoPage = () => {
         return (
@@ -15,7 +15,7 @@ const InfoPage = () => {
                         >
                                 <Row>
                                         <Col>
-                                                <h1>About</h1>
+                                                <h1>Vice Chancellor</h1>
                                                 <p>
                                                         Home /{" "}
                                                         <span
@@ -23,14 +23,15 @@ const InfoPage = () => {
                                                                         color: "brown",
                                                                 }}
                                                         >
-                                                                About
+                                                                Vice Chancellor
+                                                                Message
                                                         </span>
                                                 </p>
                                         </Col>
                                 </Row>
                         </Container>
                         <Container fluid>
-                                <Row
+                                {/* <Row
                                         style={{
                                                 backgroundColor: "#fff",
                                         }}
@@ -103,7 +104,7 @@ const InfoPage = () => {
                                                         rights organisations.
                                                 </p>
                                         </Col>
-                                </Row>
+                                </Row> */}
                                 <Row
                                         style={{
                                                 backgroundColor: "#E0E0E0",
@@ -112,13 +113,32 @@ const InfoPage = () => {
                                 >
                                         <Col
                                                 xs={10}
+                                                lg={4}
+                                                md={6}
+                                                className="mx-auto px-lg-5 my-5 align-self-center"
+                                                data-aos="fade-in"
+                                        >
+                                                <div className="about-img_container">
+                                                        <Image
+                                                                src={vc_sir}
+                                                                fluid
+                                                                style={{
+                                                                        border: "1px solid brown",
+                                                                        padding: "5px",
+                                                                }}
+                                                        />
+                                                </div>
+                                        </Col>
+                                        <Col
+                                                xs={10}
                                                 lg={8}
                                                 md={6}
                                                 className="mx-auto px-lg-5 my-5"
                                         >
                                                 <h1 className="text-capitalize">
                                                         <strong className="banner-title">
-                                                                Mission
+                                                                Vice Chancellor
+                                                                Message
                                                         </strong>
                                                 </h1>
                                                 <div
@@ -131,9 +151,8 @@ const InfoPage = () => {
                                                         className="my-4 text-muted w-75 about-text"
                                                         data-aos="fade-right"
                                                 >
-                                                        Thapar Institute of
-                                                        Engineering &
-                                                        Technology, which
+                                                        Jatiya Kabi Kazi Nazrul
+                                                        Islam University, which
                                                         comprises of
                                                         inter-disciplinary
                                                         exploration and
@@ -179,24 +198,6 @@ const InfoPage = () => {
                                                         and development for the
                                                         benefit of society.
                                                 </p>
-                                        </Col>
-                                        <Col
-                                                xs={10}
-                                                lg={4}
-                                                md={6}
-                                                className="mx-auto px-lg-5 my-5 align-self-center"
-                                                data-aos="fade-in"
-                                        >
-                                                <div className="about-img_container">
-                                                        <Image
-                                                                src="https://res.cloudinary.com/mkrakib/image/upload/v1656415011/JKKNIU_Images/College_Logo_tnoszo.png"
-                                                                fluid
-                                                                style={{
-                                                                        border: "1px solid brown",
-                                                                        padding: "5px",
-                                                                }}
-                                                        />
-                                                </div>
                                         </Col>
                                 </Row>
                         </Container>

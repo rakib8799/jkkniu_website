@@ -10,6 +10,7 @@ import news05 from "../../images/news/news05.jpg";
 import news06 from "../../images/news/news06.jpg";
 
 import "./message.css";
+import { Link } from "react-router-dom";
 // import "../courses/courses.css";
 
 const Message = () => {
@@ -23,7 +24,7 @@ const Message = () => {
                         image: news01,
                 },
                 {
-                        newsTitle: "জাতীয় কবি কাজী নজরুল ইসলাম বিশ্ববিদ্যালয়উপাচার্য পদে প্রফেসর ড. সৌমিত্র শেখর দে’র যোগদান...",
+                        newsTitle: "জাতীয় কবি কাজী নজরুল ইসলাম বিশ্ববিদ্যালয়ের উপাচার্য পদে প্রফেসর ড. সৌমিত্র শেখর দে’র যোগদান...",
                         image: news02,
                 },
                 {
@@ -53,7 +54,10 @@ const Message = () => {
                 >
                         <Card
                                 className="course-card"
-                                style={{ height: "65vh" }}
+                                style={{
+                                        height: "60vh",
+                                        // background: "#444444",
+                                }}
                         >
                                 <div className="img-container">
                                         <Card.Img
@@ -61,6 +65,7 @@ const Message = () => {
                                                 src={news.image}
                                                 className="course-img"
                                                 style={{
+                                                        // objectFit: "contain",
                                                         height: "35vh",
                                                 }}
                                         />
@@ -70,7 +75,19 @@ const Message = () => {
                                 </div>
                                 <Card.Body>
                                         <Card.Title>
-                                                {news.newsTitle}
+                                                <Link
+                                                        to="/news"
+                                                        className="text-dark"
+                                                >
+                                                        {/* {news.newsTitle} */}
+                                                        {news?.newsTitle
+                                                                .length < 57
+                                                                ? news.newsTitle
+                                                                : news?.newsTitle.slice(
+                                                                          0,
+                                                                          56
+                                                                  ) + "..."}
+                                                </Link>
                                         </Card.Title>
                                         {/* <Card.Text>
                                                         Some quick example text
@@ -80,12 +97,19 @@ const Message = () => {
                                                         content.
                                                 </Card.Text> */}
                                         <div className="">
-                                                <Button
-                                                        className="btn btn-optional position-absolute mb-3"
-                                                        style={{ bottom: "0" }}
-                                                >
-                                                        View Full News
-                                                </Button>
+                                                <Link to="/news">
+                                                        <Button
+                                                                className="btn btn-optional position-absolute mb-3"
+                                                                style={{
+                                                                        bottom: "0",
+                                                                        top: "85%",
+                                                                        right: "30%",
+                                                                        left: "30%",
+                                                                }}
+                                                        >
+                                                                View News
+                                                        </Button>
+                                                </Link>
                                         </div>
                                 </Card.Body>
                         </Card>
@@ -95,7 +119,8 @@ const Message = () => {
         return (
                 <section id="messages">
                         <Container className="message-container">
-                                <Row>
+                                {/* <h2>amo</h2> */}
+                                <Row className="">
                                         <Col className="mx-auto mt-5 mb-3 text-center text-capitalize">
                                                 <h1>
                                                         Latest{" "}
@@ -107,120 +132,9 @@ const Message = () => {
                                                                 News
                                                         </strong>
                                                 </h1>
-                                                {/* <div className="latest-news">
-                                                                <marquee
-                                                                        ref={
-                                                                                this
-                                                                                        .marquee
-                                                                        }
-                                                                        onMouseEnter={() =>
-                                                                                this
-                                                                                        .marquee &&
-                                                                                this
-                                                                                        .marquee
-                                                                                        .current &&
-                                                                                this.marquee.current.stop()
-                                                                        }
-                                                                        onMouseLeave={() =>
-                                                                                this
-                                                                                        .marquee &&
-                                                                                this
-                                                                                        .marquee
-                                                                                        .current &&
-                                                                                this.marquee.current.start()
-                                                                        }
-                                                                >
-                                                                        <p>
-                                                                                <Link
-                                                                                        href="/notification"
-                                                                                        className="marq-a"
-                                                                                >
-                                                                                        We
-                                                                                        are
-                                                                                        coming
-                                                                                        soon
-                                                                                        with
-                                                                                        bunch
-                                                                                        of
-                                                                                        surprises
-                                                                                </Link>
-                                                                                <i
-                                                                                        className="fas fa-certificate"
-                                                                                        style={{
-                                                                                                marginRight:
-                                                                                                        "2rem",
-                                                                                                marginLeft: "10px",
-                                                                                        }}
-                                                                                ></i>
-                                                                                <Link
-                                                                                        href="/notification"
-                                                                                        className="marq-a"
-                                                                                >
-                                                                                        We
-                                                                                        are
-                                                                                        coming
-                                                                                        soon
-                                                                                        with
-                                                                                        bunch
-                                                                                        of
-                                                                                        surprises
-                                                                                </Link>
-                                                                                <i
-                                                                                        className="fas fa-certificate"
-                                                                                        style={{
-                                                                                                marginRight:
-                                                                                                        "2rem",
-                                                                                                marginLeft: "10px",
-                                                                                        }}
-                                                                                ></i>
-                                                                                <Link
-                                                                                        href="/notification"
-                                                                                        className="marq-a"
-                                                                                >
-                                                                                        We
-                                                                                        are
-                                                                                        coming
-                                                                                        soon
-                                                                                        with
-                                                                                        bunch
-                                                                                        of
-                                                                                        surprises
-                                                                                </Link>
-                                                                                <i
-                                                                                        className="fas fa-certificate"
-                                                                                        style={{
-                                                                                                marginRight:
-                                                                                                        "2rem",
-                                                                                                marginLeft: "10px",
-                                                                                        }}
-                                                                                ></i>
-                                                                                <Link
-                                                                                        href="/notification"
-                                                                                        className="marq-a"
-                                                                                >
-                                                                                        We
-                                                                                        are
-                                                                                        coming
-                                                                                        soon
-                                                                                        with
-                                                                                        bunch
-                                                                                        of
-                                                                                        surprises
-                                                                                </Link>
-                                                                                <i
-                                                                                        className="fas fa-certificate"
-                                                                                        style={{
-                                                                                                marginRight:
-                                                                                                        "2rem",
-                                                                                                marginLeft: "10px",
-                                                                                        }}
-                                                                                ></i>
-                                                                        </p>
-                                                                </marquee>
-                                                        </div> */}
                                         </Col>
                                 </Row>
-                                <Row className="mx-3 main-row">
+                                <Row className="main-row">
                                         {displayMessageCard}
                                 </Row>
                                 <Row>

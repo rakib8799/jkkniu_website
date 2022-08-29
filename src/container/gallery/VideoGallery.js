@@ -3,7 +3,7 @@ import { Container, Row, Col } from "react-bootstrap";
 
 const VideoGallery = () => {
         return (
-                <Container fluid>
+                <Container>
                         <Row>
                                 <Col className="mx-auto text-center mt-5 mb-3">
                                         <h1 style={{ color: "brown" }}>

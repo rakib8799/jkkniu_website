@@ -2,6 +2,7 @@ import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import { Link } from "react-router-dom";
 import "./event.css";
+import varsity_image from "../../images/about.jpg";
 
 const Event = () => {
         const displayEvent = ["event01", "event02", "event03"].map(
@@ -13,8 +14,7 @@ const Event = () => {
                                                         <div
                                                                 className="card__background--main"
                                                                 style={{
-                                                                        backgroundImage:
-                                                                                "url(http://demo.yolotheme.com/html/motor/images/demo/demo_131.jpg)",
+                                                                        backgroundImage: `url(${varsity_image})`,
                                                                 }}
                                                         >
                                                                 <div className="card__background--layer"></div>

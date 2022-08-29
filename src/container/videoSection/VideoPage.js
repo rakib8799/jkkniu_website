@@ -1,14 +1,17 @@
 import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
-// import jkkniu from "../../videos/JKKNIU.mp4";
+import jkkniuVideo from "../../video/স্বপ্নের নজরুল বিশ্ববিদ্যালয়ে ভর্তি নিয়ে উপাচার্যের দিকনির্দেশনা _ Kazi Nazrul Islam University, MYM.mp4";
 import "./video.css";
 // import CountUp from "react-countup";
 
 const VideoPage = () => {
         return (
-                <section style={{ background: "#fff" }}>
-                        <Container fluid className="video-container">
-                                <Row>
+                <section
+                        style={{ background: "#fff" }}
+                        className="d-flex justify-content-center"
+                >
+                        <Container className="video-container">
+                                <Row className="">
                                         <Col className="mx-auto mt-5 mb-3 text-center text-capitalize">
                                                 <h1>
                                                         Our{" "}
@@ -28,13 +31,13 @@ const VideoPage = () => {
                                                 className="mx-auto video-col"
                                         >
                                                 <video
-                                                        autoPlay
+                                                        
                                                         loop
-                                                        muted
-                                                        // controls
+                                                        
+                                                        controls
                                                 >
                                                         <source
-                                                                src="https://res.cloudinary.com/mkrakib/video/upload/v1656417010/JKKNIU_Images/JKKNIU_hjxnqx.mp4"
+                                                                src={jkkniuVideo}
                                                                 type="video/mp4"
                                                         ></source>
                                                 </video>
