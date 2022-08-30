@@ -44,11 +44,11 @@ const Info = () => {
                                                         className="my-4 text-muted w-100 about-text text-justify"
                                                         data-aos="fade-right"
                                                 >
-                                                        Welcome to the
-                                                        University of Dhaka’s
-                                                        website, featuring the
-                                                        oldest, largest and the
-                                                        premier
+                                                        Welcome to the Jatiya
+                                                        Kabi Kazi Nazrul Islam
+                                                        University website,
+                                                        featuring the oldest,
+                                                        largest and the premier
                                                         multidisciplinary
                                                         university of
                                                         Bangladesh! Founded in
